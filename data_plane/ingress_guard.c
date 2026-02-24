@@ -10,14 +10,43 @@ struct
     __uint(pinning, LIBBPF_PIN_BY_NAME);
 } blkd_ip_map SEC(".maps");
 
+struct
+{
+    __uint(type, BPF_MAP_TYPE_HASH);
+    __type(key, char[MAX_QNAME_LEN]); // Domain Name
+    __type(value, uint8_t);           // is blocked
+    __uint(max_entries, MAX_BLOCKED_LENGTH);
+    __uint(pinning, LIBBPF_PIN_BY_NAME);
+
+} blkd_domain_map SEC(".maps");
+
 
 /* Tunnel guard for incoming traffic (ingress) to the DNS resolver
  *
- * Drops packets if the requesters IP addrss is blocked
+ * Drops packets under the following conditions: 
+ * - the packet is TCP 
+ * - the packet is IPv6
+ * - the requesters IP address is blocked
+ * - the domain name contains a blocked sub domain 
+ * - the query is too long 
+ * - the query type is disallowed 
  *
- * Inspects DNS queries being sent to the resolver from requesters 
- * Maps their IP address to a unique key using the qname + query ID 
- * 
+ * if the packet is coming from a client and is allowed to pass, 
+ * the source IP address of the client will be mapped to a domain name. 
+ * This is so the egress guard can push both the DNS query and the source IP 
+ * address to the control plane. 
+ *
+ * The mapping will be removed by the egress guard after it has finished processing.  
+ *
+ * Allowed qtypes include: 
+ *  A
+ *  AAAA
+ *  CNAME
+ *  MX
+ *  NS
+ *  SOA
+ *  PTR
+ *
  */
 SEC("cgroup_skb/ingress")
 int tunnel_guard_ingress(struct __sk_buff* skb)
@@ -27,7 +56,6 @@ int tunnel_guard_ingress(struct __sk_buff* skb)
     void* data     = (void*)(long)skb->data;
 
     /* No ipv6, too complicated to parse rn */
-
     if (skb->protocol == bpf_htons(ETH_P_IPV6))
         return DROP;
 
@@ -54,11 +82,7 @@ int tunnel_guard_ingress(struct __sk_buff* skb)
     }
     else if (ip_header->protocol == IPPROTO_TCP)
     {
-        struct tcphdr* tcp_header = transport_header;
-        if ((void*)tcp_header + sizeof(struct tcphdr) >= data_end)
-            return PASS;
-        dns_header = (void*)tcp_header + sizeof(struct tcphdr);
-        dst_port   = tcp_header->dest; 
+        return DROP; // I dont want to deal with tcp rn 
     }
     else
     {
@@ -88,12 +112,72 @@ int tunnel_guard_ingress(struct __sk_buff* skb)
     if (len > MAX_QNAME_LEN)
         return DROP;
 
+
     char full_qname[MAX_QNAME_LEN] = {0};
 
     if (bpf_probe_read_kernel(full_qname, len, qname) < 0)
         return DROP;
 
-    bpf_map_update_elem(&query_to_ip, full_qname, &ip_header->saddr, BPF_ANY);
+    /*
+     * Check each subdomain and drop if it is blocked
+     * EX: JFDSL.attacker.com
+     * Checks JFDSL.attacker.com
+     * Then checks attacker.com
+     * Then .com
+     * Checks in wire format, not presentation
+     */
+
+    int remaining_label_chars = 0;
+    for (int i = 0; i < len; i++)
+    {
+        if (remaining_label_chars == 0)
+        {
+            char sub_domain[MAX_QNAME_LEN] = {0};
+
+            int copy_len = len - i + 1;
+
+            if (bpf_probe_read_kernel(sub_domain, copy_len, qname + i) < 0)
+                return DROP;
+
+            if (bpf_map_lookup_elem(&blkd_domain_map, sub_domain))
+                return DROP;
+
+            remaining_label_chars = full_qname[i];
+        }
+        else
+        {
+            remaining_label_chars--;
+        }
+    }
+
+
+    uint16_t* qtype_ptr = (uint16_t*)(qname + len + 1);
+
+    if ((char*)(qtype_ptr + 1) > (char*)data_end)
+        return DROP;
+
+    uint16_t qtype = bpf_ntohs(*qtype_ptr);
+
+
+    switch (qtype)
+    {
+    case QTYPE_A:
+    case QTYPE_AAAA:
+    case QTYPE_CNAME:
+    case QTYPE_MX:
+    case QTYPE_NS:
+    case QTYPE_SOA:
+    case QTYPE_PTR:
+    {
+        /* Map the IP to the query name */ 
+        bpf_map_update_elem(&query_to_ip, full_qname, &ip_header->saddr, BPF_ANY);
+        return PASS;
+    }
+
+    default:
+        return DROP;
+    }
+
     
     return PASS; 
 }
