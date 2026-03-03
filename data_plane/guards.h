@@ -18,7 +18,7 @@
 
 // DNS
 #define DNS_HDR_LEN 12
-#define MAX_QNAME_LEN 32
+#define MAX_QNAME_LEN 64
 #define MAX_LABEL_SIZE 20
 #define DNS_PORT 53
 

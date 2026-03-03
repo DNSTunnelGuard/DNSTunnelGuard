@@ -1,5 +1,6 @@
 from configparser import ConfigParser
 from dnsanalyzers import DNSAnalyzer
+from mlanalyzer import MLAnalyzer
 from domainlist import DomainList
 from firewall import Firewall, BPFFirewall, CSVFirewall
 from recordreceiver import RecordReceiver, BPFRecordReceiver, CSVRecordReceiver
@@ -41,6 +42,17 @@ def parse_analyzer_types(
                 ),
                 num_queries_threshold=int(traffic_config["num_queries_threshold"]),
                 tld_list=tld_list,
+            )
+        )
+
+    mlanalyzer_config = config["mlanalyzer"]
+    if mlanalyzer_config["enabled"] == "true":
+        logger.info("Initializing ML analyzer")
+        analyzers.append(
+            MLAnalyzer(
+                weight_percentage=float(mlanalyzer_config["weight_percentage"]),
+                identifer="ML",
+                apiurl=mlanalyzer_config["apiurl"]
             )
         )
 
