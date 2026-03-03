@@ -112,13 +112,10 @@ int tunnel_guard_egress(struct __sk_buff* skb)
 
     uint32_t* ip_addr_p = bpf_map_lookup_elem(&query_to_ip, full_qname);
 
-    /* There should be a mapping when query is leaving resolver to DNS server. */ 
-
     if (!ip_addr_p)
-        return DROP; 
+        return PASS; 
 
-
-    uint32_t ip_addr = bpf_htonl(*ip_addr_p);
+    uint32_t ip_addr = *ip_addr_p;
     bpf_map_delete_elem(&query_to_ip, full_qname);
 
     struct query_event* event = bpf_ringbuf_reserve(&query_events, sizeof(struct query_event), 0); 
@@ -126,7 +123,7 @@ int tunnel_guard_egress(struct __sk_buff* skb)
     if (!event)
         return DROP; 
 
-    event->ip_address = bpf_ntohl(ip_addr); 
+    event->ip_address = ip_addr; 
     for (int i = 0; i < MAX_QUERY_LEN; i++)
     {
         if (dns_header + i >= data_end)
