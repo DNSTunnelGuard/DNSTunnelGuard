@@ -14,7 +14,7 @@
  *
  */ 
 
-#define MAX_QNAME_LEN 32
+#define MAX_QNAME_LEN 64
 
 /* Get the file descriptor given a BPF map name
  *

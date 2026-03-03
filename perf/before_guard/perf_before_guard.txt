@@ -1,0 +1,23 @@
+DNS Performance Testing Tool
+Version 2.14.0
+
+[Status] Command line: dnsperf -s 10.0.2.51 -d perftest.txt
+[Status] Sending queries (to 10.0.2.51:53)
+[Status] Started at: Tue Mar  3 21:14:29 2026
+[Status] Stopping after 1 run through file
+[Status] Testing complete (end of file)
+
+Statistics:
+
+  Queries sent:         1001
+  Queries completed:    1001 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 882 (88.11%), SERVFAIL 113 (11.29%), NXDOMAIN 6 (0.60%)
+  Average packet size:  request 37, response 111
+  Run time (s):         1.347293
+  Queries per second:   742.971276
+
+  Average Latency (s):  0.114283 (min 0.000138, max 0.655276)
+  Latency StdDev (s):   0.154423
+
