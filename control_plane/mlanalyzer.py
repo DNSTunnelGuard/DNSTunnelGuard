@@ -22,7 +22,7 @@ class MLAnalyzer(DNSAnalyzer):
         super().__init__(weight_percentage, identifer)
         self.apiurl = apiurl
         self.req_error_code = None
-        self.request_responses = []
+        self.request_responses = ""
 
     def analyze(self, dns_event_query: RecordEvent) -> float: 
 
@@ -38,7 +38,7 @@ class MLAnalyzer(DNSAnalyzer):
             else: 
                 self.req_error_code = None
             result = response.json()
-            self.request_responses.append(result)
+            self.request_response = self = result.dump()
             weight = float(result.get("weight_percentage", 0.0))
             max_weight = max(max_weight, weight)
 
@@ -48,4 +48,4 @@ class MLAnalyzer(DNSAnalyzer):
         if self.req_error_code is not None: 
             return f"ML Analayzer returned a {self.req_error_code} response"
         
-        return f"ML Request responses: {self.request_responses}"
+        return f"ML Request response: {self.request_response}"
