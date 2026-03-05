@@ -4,64 +4,100 @@ from enum import Enum
 import threading 
 from queue import Queue
 from typing import TypeVar, Generic
-from dataclasses import dataclass 
+from dataclasses import dataclass, field
 from configparser import ConfigParser
-from guardconfig import GuardConfig
+from guardconfig import GuardConfig, RuntimeGuardConfig
+from typing import Any
+from collections import namedtuple
 
 T = TypeVar('T')
 
 class ServerEventType(Enum): 
-    CONFIG_RELOAD = 1
+    RUNTIME_CONFIG_RELOAD = 1
+    PRINT_STATUS = 2
 
 @dataclass 
 class ServerEvent(Generic[T]): 
     event_type: ServerEventType
     data: T
 
-class ControlServer: 
-    
-    app = Flask(__name__)
-    app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
-    allowed_extensions = { 'ini' }
-
-    def __init__(self, config_path: str, args, host="0.0.0.0", port=8080): 
-        self.args = args
-        self.config_path = config_path
-        self.host = host 
-        self.port = port
-        self.queue = Queue()
-
-    def run(self) -> Queue[ServerEvent]: 
-        threading.Thread(target=lambda: self.app.run(host=self.host, port=self.port), daemon=True).start()
-        return self.queue 
+app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
+allowed_extensions = { 'ini' }
 
 
-    @app.route('/reload_config', methods=['POST'])
-    def _push_config_event(self):
-        file = request.files.get('file')
-        if not file: 
-            return jsonify("Missing file"), 400
+@dataclass
+class ServerResources: 
+    host: Any = None
+    port: Any = None
+    queue: Any = None
+    config: Any = None
+    runtime_config: Any = None
 
-        file_content = file.read()
+SERVER_RESOURCES = ServerResources()
 
-        if not file_content: 
-            return jsonify("Could not read file content"), 400
+def run_server(
+        config: GuardConfig, 
+        runtime_config: RuntimeGuardConfig, 
+    ) -> Queue[ServerEvent]: 
 
-        config = ConfigParser()
-        config.read(file_content)
+    global SERVER_RESOURCES
+    SERVER_RESOURCES = ServerResources(
+        host=config.server_host,
+        port=config.server_port,
+        queue=Queue(),
+        config=config,
+        runtime_config=runtime_config
+    )
 
-        try: 
-            guard_config = GuardConfig(config, self.args)
-        except Exception as e: 
-            return jsonify(f"Invalid configuration: {str(e)}"), 500
+    if SERVER_RESOURCES is not None: 
+        threading.Thread(
+            target=lambda: 
+                app.run(host=SERVER_RESOURCES.host, port=SERVER_RESOURCES.port), daemon=True).start()
+        return SERVER_RESOURCES.queue 
 
-        with open(self.config_path, 'w') as f: 
-            f.write(file_content)
+    return Queue()
 
-        self.queue.put(ServerEvent(event_type=ServerEventType.CONFIG_RELOAD, data=guard_config))
 
-        return jsonify("Config file uploaded"), 200
+# --- Server routes operate on control server resources 
 
-            
+@app.route('/reload_runtime_config', methods=['POST'])
+def push_config_event():
+    file = request.files.get('file')
+    if not file: 
+        return jsonify("Missing file"), 400
+
+    file_content = file.read()
+
+    if not file_content: 
+        return jsonify("Could not read file content"), 400
+
+    config = ConfigParser()
+    config.read_string(file_content.decode())
+
+    try: 
+        if SERVER_RESOURCES is None: 
+            return jsonify(f"Missing conifg"), 500
+
+        runtime_config = RuntimeGuardConfig(
+            config, 
+            SERVER_RESOURCES.config.tld_list, 
+            SERVER_RESOURCES.runtime_config.path
+        )
+    except Exception as e: 
+        return jsonify(f"Invalid configuration: {str(e)}"), 500
+
+    with open(SERVER_RESOURCES.runtime_config.path, 'wb') as f: 
+        f.write(file_content)
+
+    SERVER_RESOURCES.queue.put(
+        ServerEvent(event_type=ServerEventType.RUNTIME_CONFIG_RELOAD, data=runtime_config)
+    )
+
+    SERVER_RESOURCES.runtime_config = runtime_config
+
+    return jsonify("Config file uploaded"), 200
+
+        
 
 

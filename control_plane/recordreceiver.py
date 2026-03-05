@@ -84,9 +84,11 @@ class CSVRecordReceiver(RecordReceiver):
         self,
         path: str,
         max_queue_size=RecordReceiver.DEFAULT_MAX_QUEUE_SIZE,
+        cycle_queries=False
     ):
         self.csv_file = open(path, "r")
         self.csv_reader = csv.reader(self.csv_file)
+        self.cycle_queries = cycle_queries
         super().__init__(max_queue_size)
 
     def __exit__(self, exc_type, exc_value, traceback):
@@ -102,8 +104,12 @@ class CSVRecordReceiver(RecordReceiver):
         try:
             row = next(self.csv_reader)
         except StopIteration:
-            self._query_queue.put(None)
-            return False
+            if not self.cycle_queries: 
+                self._query_queue.put(None)
+                return False
+            self.csv_file.seek(0)
+            return True
+            
 
         qname, ip_addr = row
 
