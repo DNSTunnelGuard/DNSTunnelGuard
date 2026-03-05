@@ -38,7 +38,7 @@ class MLAnalyzer(DNSAnalyzer):
             else: 
                 self.req_error_code = None
             result = response.json()
-            self.request_response = self = result.dump()
+            self.request_response = result
             weight = float(result.get("weight_percentage", 0.0))
             max_weight = max(max_weight, weight)
 
