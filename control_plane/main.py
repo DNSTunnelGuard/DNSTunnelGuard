@@ -1,70 +1,100 @@
 from argparse import ArgumentParser
-from configparser import ConfigParser
+import guardconfig 
+import controlserver
 from guardcontroller import GuardController
-import guardconfig
+from recordreceiver import RecordReceiver
 import sys
+import queue 
 
 import logging
 
 logger = logging.getLogger(__name__)
 
 
+
+def run_event_loop(receiver: RecordReceiver, guard_controller: GuardController, server_event_queue: queue.Queue): 
+    should_run = True 
+    with receiver:
+        while should_run: 
+            if not receiver.receive(1): 
+                break 
+            try: 
+                while True: 
+                    # handle server events 
+                    event = server_event_queue.get_nowait()
+                    match event.event_type: 
+                        case controlserver.ServerEventType.RUNTIME_CONFIG_RELOAD: 
+                            runtime_config = event.data 
+                            guardconfig.update_guard_controller(guard_controller, runtime_config)
+                            logger.info("Runtime config reloaded")
+                        case controlserver.ServerEventType.TERMINATE: 
+                            should_run = False
+                            logger.info("Terminating")
+                            break 
+
+            except queue.Empty:
+                continue
+
+
+
+
 def main():
     parser = ArgumentParser(description="DNS Tunnel Guard Options")
 
-    parser.add_argument("--config_path", required=False, help="Path to config file")
+    parser.add_argument(
+        "-c", "--config_path", 
+        required=False, 
+        help="Path to config file", 
+        default="config.ini"
+    )
 
     parser.add_argument(
-        "--csv_firewall_path",
+        "-rc", "--runtime_config_path", 
+        required=False, 
+        help="Path to runtime config file", 
+        default="runtime_config.ini"
+    )
+
+    parser.add_argument(
+        "-f", "--csv_firewall_path",
         required=False,
         help="Path to emulated CSV file of blocked IP addresses and domain names",
     )
 
     parser.add_argument(
-        "--csv_records_path",
+        "-r", "--csv_records_path",
         required=False,
         help="Path to emulated CSV file of DNS records",
     )
 
+    parser.add_argument(
+        "-y", "--cycle_csv_queries",
+        required=False,
+        help="Cycle CSV record queries",
+        action="store_true"
+    )
+
     args = parser.parse_args()
 
-    config_path = "config.ini" if args.config_path is None else args.config_path
-
-    config = ConfigParser()
-    config.read(config_path)
-
-    guardconfig.setup_logging(config)
-
-    logger.info(f"Using configuration {config_path}")
+    logger.info(f"Using configuration {args.config_path} and runtime configuration {args.runtime_config_path}")
 
     try:
-        record_receiver, firewall = guardconfig.parse_guard_types(args, config)
-        whitelists = guardconfig.parse_dns_whitelist_types(config)
-        tld_list = guardconfig.parse_tld_list(config)
-        analyzers = guardconfig.parse_analyzer_types(config, tld_list)
-        sus_percentage_threshold = guardconfig.parse_percentage_threshold(config)
-        blacklist = guardconfig.parse_blacklist(config)
+        config, runtime_config = guardconfig.get_configs(args)
 
     except Exception as e:
         logger.critical(f"Invalid configuration: {str(e)}")
         sys.exit(1)
 
-    guard_controller = GuardController(
-        whitelists=whitelists,
-        analyzers=analyzers,
-        firewall=firewall,
-        blacklist=blacklist,
-        sus_percentage_threshold=sus_percentage_threshold,
-        tld_list=tld_list,
-    )
+    guard_controller = guardconfig.load_guard_controller(config, runtime_config)
 
-    record_receiver.set_on_recv(guard_controller.process_record)
+    config.receiver.set_on_recv(guard_controller.process_record)
 
-    logger.info(f"Tunnel Guard Up and Running")
+    logger.info(f"Tunnel Guard Up and Running\n\n")
+
+    server_event_queue = controlserver.run_server(config, runtime_config)
 
     try:
-        with record_receiver:
-            record_receiver.receive()
+        run_event_loop(config.receiver, guard_controller, server_event_queue)
     except KeyboardInterrupt:
         pass
 
