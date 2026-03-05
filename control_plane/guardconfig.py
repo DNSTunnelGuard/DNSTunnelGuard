@@ -8,6 +8,8 @@ from bpfmanager import BPFManager
 from dataclasses import dataclass
 from trafficanalyzer import TrafficDNSAnalyzer
 from entropyanalyzer import EntropyDNSAnalyzer
+from guardcontroller import GuardController
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -19,6 +21,10 @@ class GuardConfig:
 
     """
     def __init__(self, config: ConfigParser, args): 
+        self.args = args 
+        self.update(config)
+
+    def update(self, config: ConfigParser): 
 
         self.tld_list = parse_tld_list(config)
 
@@ -26,7 +32,7 @@ class GuardConfig:
 
         self.whitelists = parse_dns_whitelist_types(config)
 
-        receiver, firewall = parse_guard_types(args, config)
+        receiver, firewall = parse_guard_types(self.args, config)
         self.receiver = receiver
         self.firewall = firewall
 
@@ -37,9 +43,15 @@ class GuardConfig:
         self.percentage_threshold = parse_percentage_threshold(config)
 
 
-
-
-
+def load_guard_controller(guard_config: GuardConfig) -> GuardController: 
+    return GuardController(
+        whitelists=guard_config.whitelists,
+        analyzers=guard_config.analyzers,
+        firewall=guard_config.firewall,
+        blacklist=guard_config.blacklist,
+        sus_percentage_threshold=guard_config.percentage_threshold,
+        tld_list=guard_config.tld_list,
+    )
 
 
 # Static config parsers 

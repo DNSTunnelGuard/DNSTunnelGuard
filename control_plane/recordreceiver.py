@@ -36,13 +36,11 @@ class RecordReceiver:
         self.join_on_recv_thread()
         return False
 
-    def receive(self):
+    def receive(self, wait_seconds: int):
         """
         Begin the receive loop to receive records from source
         """
-        while True:
-            if not self._push_record():
-                break
+        return self._push_record(wait_seconds)
 
     # ----------------
     # No need to use these if using "with" context
@@ -69,7 +67,7 @@ class RecordReceiver:
                 break
             on_recv(query)
 
-    def _push_record(self) -> bool:
+    def _push_record(self, wait_seconds: int) -> bool:
         """
         Implemented by derived class, pushes record onto the queue from the source
         Returns True if more receiving can be done, False otherwise
@@ -86,9 +84,7 @@ class CSVRecordReceiver(RecordReceiver):
         self,
         path: str,
         max_queue_size=RecordReceiver.DEFAULT_MAX_QUEUE_SIZE,
-        sleep_time: float | None = None,
     ):
-        self.sleep_time = sleep_time
         self.csv_file = open(path, "r")
         self.csv_reader = csv.reader(self.csv_file)
         super().__init__(max_queue_size)
@@ -100,9 +96,8 @@ class CSVRecordReceiver(RecordReceiver):
     def close(self):
         self.csv_file.close()
 
-    def _push_record(self) -> bool:
-        if self.sleep_time is not None:
-            time.sleep(self.sleep_time)
+    def _push_record(self, wait_seconds: int) -> bool:
+        time.sleep(wait_seconds)
 
         try:
             row = next(self.csv_reader)
@@ -135,7 +130,6 @@ class BPFRecordReceiver(RecordReceiver):
         )
         super().__init__(max_queue_size)
 
-    def _push_record(self) -> bool:
-        large_timeout = 99999999
-        self.bpf_manager.poll_ringbuffer(large_timeout)
+    def _push_record(self, wait_seconds: int) -> bool:
+        self.bpf_manager.poll_ringbuffer(wait_seconds)  
         return True

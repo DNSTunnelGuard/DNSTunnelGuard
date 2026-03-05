@@ -1,8 +1,9 @@
 from argparse import ArgumentParser
 from configparser import ConfigParser
-from guardcontroller import GuardController
-from guardconfig import GuardConfig
+from guardconfig import GuardConfig, load_guard_controller
+from controlserver import ControlServer, ServerEventType, ServerEvent
 import sys
+import queue 
 
 import logging
 
@@ -42,22 +43,33 @@ def main():
         logger.critical(f"Invalid configuration: {str(e)}")
         sys.exit(1)
 
-    guard_controller = GuardController(
-        whitelists=guard_config.whitelists,
-        analyzers=guard_config.analyzers,
-        firewall=guard_config.firewall,
-        blacklist=guard_config.blacklist,
-        sus_percentage_threshold=guard_config.percentage_threshold,
-        tld_list=guard_config.tld_list,
-    )
+    guard_controller = load_guard_controller(guard_config)
 
     guard_config.receiver.set_on_recv(guard_controller.process_record)
 
     logger.info(f"Tunnel Guard Up and Running")
 
+    control_server = ControlServer(config_path, args) 
+
+    server_event_queue = control_server.run()
+
     try:
         with guard_config.receiver:
-            guard_config.receiver.receive()
+            while True: 
+                if not guard_config.receiver.receive(1): 
+                    break 
+                try: 
+                    while True: 
+                        # handle server events 
+                        event = server_event_queue.get_nowait()
+                        match event.event_type: 
+                            case ServerEventType.CONFIG_RELOAD: 
+                                guard_config = event.data 
+                                guard_controller = load_guard_controller(guard_config)
+                                guard_config.receiver.set_on_recv(guard_controller.process_record)
+
+                except queue.Empty:
+                    continue
     except KeyboardInterrupt:
         pass
 

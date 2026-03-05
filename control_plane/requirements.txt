@@ -2,3 +2,4 @@ dnslib
 pytest
 black
 requests
+flask
