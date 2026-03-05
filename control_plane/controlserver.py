@@ -27,7 +27,6 @@ class ServerEvent(Generic[T]):
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
-allowed_extensions = { 'ini' }
 
 
 @dataclass
