@@ -4,7 +4,7 @@ from enum import Enum
 import threading 
 from queue import Queue
 from typing import TypeVar, Generic
-from dataclasses import dataclass, field
+from dataclasses import dataclass 
 from configparser import ConfigParser
 from guardconfig import GuardConfig, RuntimeGuardConfig
 from typing import Any
@@ -75,9 +75,6 @@ def push_config_event():
     config.read_string(file_content.decode())
 
     try: 
-        if SERVER_RESOURCES is None: 
-            return jsonify(f"Missing conifg"), 500
-
         runtime_config = RuntimeGuardConfig(
             config, 
             SERVER_RESOURCES.config.tld_list, 
