@@ -50,11 +50,10 @@ def run_server(
         runtime_config=runtime_config
     )
 
-    if SERVER_RESOURCES is not None: 
-        threading.Thread(
-            target=lambda: 
-                app.run(host=SERVER_RESOURCES.host, port=SERVER_RESOURCES.port), daemon=True).start()
-        return SERVER_RESOURCES.queue 
+    threading.Thread(
+        target=lambda: 
+            app.run(host=SERVER_RESOURCES.host, port=SERVER_RESOURCES.port), daemon=True).start()
+    return SERVER_RESOURCES.queue 
 
     return Queue()
 
