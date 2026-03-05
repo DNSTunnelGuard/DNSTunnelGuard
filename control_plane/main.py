@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from configparser import ConfigParser
 from guardcontroller import GuardController
-import guardconfig
+from guardconfig import GuardConfig
 import sys
 
 import logging
@@ -33,38 +33,31 @@ def main():
     config = ConfigParser()
     config.read(config_path)
 
-    guardconfig.setup_logging(config)
-
     logger.info(f"Using configuration {config_path}")
 
     try:
-        record_receiver, firewall = guardconfig.parse_guard_types(args, config)
-        whitelists = guardconfig.parse_dns_whitelist_types(config)
-        tld_list = guardconfig.parse_tld_list(config)
-        analyzers = guardconfig.parse_analyzer_types(config, tld_list)
-        sus_percentage_threshold = guardconfig.parse_percentage_threshold(config)
-        blacklist = guardconfig.parse_blacklist(config)
+        guard_config = GuardConfig(config, args)
 
     except Exception as e:
         logger.critical(f"Invalid configuration: {str(e)}")
         sys.exit(1)
 
     guard_controller = GuardController(
-        whitelists=whitelists,
-        analyzers=analyzers,
-        firewall=firewall,
-        blacklist=blacklist,
-        sus_percentage_threshold=sus_percentage_threshold,
-        tld_list=tld_list,
+        whitelists=guard_config.whitelists,
+        analyzers=guard_config.analyzers,
+        firewall=guard_config.firewall,
+        blacklist=guard_config.blacklist,
+        sus_percentage_threshold=guard_config.percentage_threshold,
+        tld_list=guard_config.tld_list,
     )
 
-    record_receiver.set_on_recv(guard_controller.process_record)
+    guard_config.receiver.set_on_recv(guard_controller.process_record)
 
     logger.info(f"Tunnel Guard Up and Running")
 
     try:
-        with record_receiver:
-            record_receiver.receive()
+        with guard_config.receiver:
+            guard_config.receiver.receive()
     except KeyboardInterrupt:
         pass
 

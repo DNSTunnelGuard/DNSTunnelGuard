@@ -13,6 +13,37 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+class GuardConfig: 
+    """
+    Sets up all objects from config in correct ordering 
+
+    """
+    def __init__(self, config: ConfigParser, args): 
+
+        self.tld_list = parse_tld_list(config)
+
+        self.analyzers = parse_analyzer_types(config, self.tld_list)
+
+        self.whitelists = parse_dns_whitelist_types(config)
+
+        receiver, firewall = parse_guard_types(args, config)
+        self.receiver = receiver
+        self.firewall = firewall
+
+        setup_logging(config)
+
+        self.blacklist = parse_blacklist(config)
+
+        self.percentage_threshold = parse_percentage_threshold(config)
+
+
+
+
+
+
+
+# Static config parsers 
+
 def parse_analyzer_types(
     config: ConfigParser, tld_list: DomainList
 ) -> list[DNSAnalyzer]:
