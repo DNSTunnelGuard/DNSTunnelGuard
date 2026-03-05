@@ -1,0 +1,16 @@
+2026-03-04 15:56:19,851 [INFO] Loading model from: model_weights/two_pass
+2026-03-04 15:56:19,851 [INFO] Temperature:        4.0
+2026-03-04 15:56:20,646 [INFO] Model loaded on device: mps
+2026-03-04 15:56:24,279 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.108.44.4:3000
+2026-03-04 15:56:24,280 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-04 15:56:44,328 [INFO] Query: 'fjfdkls.attacker.com'                                        Score: 0.9266  Temp: 4.0
+2026-03-04 15:56:44,331 [INFO] 127.0.0.1 - - [04/Mar/2026 15:56:44] "GET /weight?query=fjfdkls.attacker.com HTTP/1.1" 200 -
+2026-03-04 15:56:44,359 [INFO] Query: 'fjfdkls.attacker.com'                                        Score: 0.9266  Temp: 4.0
+2026-03-04 15:56:44,359 [INFO] 127.0.0.1 - - [04/Mar/2026 15:56:44] "GET /weight?query=fjfdkls.attacker.com HTTP/1.1" 200 -
+2026-03-04 15:56:44,407 [INFO] Query: 'com'                                                         Score: 0.0772  Temp: 4.0
+2026-03-04 15:56:44,407 [INFO] 127.0.0.1 - - [04/Mar/2026 15:56:44] "GET /weight?query=com HTTP/1.1" 200 -
+2026-03-04 15:56:44,428 [INFO] Query: 'com'                                                         Score: 0.0772  Temp: 4.0
+2026-03-04 15:56:44,429 [INFO] 127.0.0.1 - - [04/Mar/2026 15:56:44] "GET /weight?query=com HTTP/1.1" 200 -
