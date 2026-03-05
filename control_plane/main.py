@@ -13,8 +13,9 @@ logger = logging.getLogger(__name__)
 
 
 def run_event_loop(receiver: RecordReceiver, guard_controller: GuardController, server_event_queue: queue.Queue): 
+    should_run = True 
     with receiver:
-        while True: 
+        while should_run: 
             if not receiver.receive(1): 
                 break 
             try: 
@@ -26,7 +27,10 @@ def run_event_loop(receiver: RecordReceiver, guard_controller: GuardController, 
                             runtime_config = event.data 
                             guardconfig.update_guard_controller(guard_controller, runtime_config)
                             logger.info("Runtime config reloaded")
-                    break 
+                        case controlserver.ServerEventType.TERMINATE: 
+                            should_run = False
+                            logger.info("Terminating")
+                            break 
 
             except queue.Empty:
                 continue
