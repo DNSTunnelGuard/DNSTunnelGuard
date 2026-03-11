@@ -21,6 +21,7 @@ class RuntimeGuardConfig:
         setup_logging(config)
         self.analyzers = parse_analyzer_types(config, tld_list)
         self.percentage_threshold = parse_percentage_threshold(config)
+        self.use_blacklist = parse_use_blacklist
 
 
 
@@ -62,7 +63,7 @@ def load_guard_controller(guard_config: GuardConfig, runtime_config: RuntimeGuar
         whitelists=guard_config.whitelists,
         analyzers=runtime_config.analyzers,
         firewall=guard_config.firewall,
-        blacklist=guard_config.blacklist,
+        blacklist=guard_config.blacklist if runtime_config.use_blacklist else None,
         sus_percentage_threshold=runtime_config.percentage_threshold,
         tld_list=guard_config.tld_list,
     )
@@ -241,3 +242,11 @@ def parse_blacklist(config: ConfigParser) -> DomainList:
 
 def parse_percentage_threshold(config: ConfigParser) -> float:
     return float(config["analyzer"]["sus_percentage_threshold"])
+
+def parse_use_blacklist(config: ConfigParser) -> bool: 
+    return True if config["analyzer"]["use_blacklist"] == 'true' else False
+
+
+
+
+

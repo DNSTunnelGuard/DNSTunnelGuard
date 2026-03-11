@@ -62,6 +62,34 @@ def run_server(
 
 # --- Server routes operate on control server resources 
 
+@app.route('/reset_runtime_config', methods=['GET'])
+def push_config_reset_event(): 
+    """
+    Reset the config file to the saved config file 
+
+    """
+    config = ConfigParser()
+
+    try: 
+        config.read(SERVER_RESOURCES.runtime_config.path)
+
+        runtime_config = RuntimeGuardConfig(
+            config, 
+            SERVER_RESOURCES.config.tld_list, 
+            SERVER_RESOURCES.runtime_config.path
+        )
+    except Exception as e: 
+        return jsonify({"Error": f"Invalid configuration: {str(e)}"}), 400
+
+    SERVER_RESOURCES.queue.put(
+        ServerEvent(event_type=ServerEventType.RUNTIME_CONFIG_RELOAD, data=runtime_config)
+    )
+
+    SERVER_RESOURCES.runtime_config = runtime_config
+
+    return jsonify("Config file reset"), 200
+
+
 @app.route('/update_runtime_config', methods=['POST'])
 def push_config_update_event(): 
     """

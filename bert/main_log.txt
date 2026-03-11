@@ -14,3 +14,1362 @@
 2026-03-04 15:56:44,407 [INFO] 127.0.0.1 - - [04/Mar/2026 15:56:44] "GET /weight?query=com HTTP/1.1" 200 -
 2026-03-04 15:56:44,428 [INFO] Query: 'com'                                                         Score: 0.0772  Temp: 4.0
 2026-03-04 15:56:44,429 [INFO] 127.0.0.1 - - [04/Mar/2026 15:56:44] "GET /weight?query=com HTTP/1.1" 200 -
+2026-03-10 14:19:54,927 [INFO] Loading model from: model_path
+2026-03-10 14:19:54,927 [INFO] Temperature:        8.0
+2026-03-10 14:19:55,052 [INFO] HTTP Request: HEAD https://huggingface.co/model_path/resolve/main/config.json "HTTP/1.1 401 Unauthorized"
+2026-03-10 14:20:10,264 [INFO] Loading model from: model_weights
+2026-03-10 14:20:10,264 [INFO] Temperature:        8.0
+2026-03-10 14:20:10,359 [INFO] Model loaded on device: cpu
+2026-03-10 14:20:10,360 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.108.14.139:3000
+2026-03-10 14:20:10,361 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-10 14:25:36,960 [INFO] Query: 'what.com'                                                    Score: 0.2199  Temp: 8.0
+2026-03-10 14:25:36,961 [INFO] 10.108.14.139 - - [10/Mar/2026 14:25:36] "GET /weight?query=what.com HTTP/1.1" 200 -
+2026-03-10 14:28:37,676 [INFO] Query: 'www.quackhacks.org'                                          Score: 0.2226  Temp: 8.0
+2026-03-10 14:28:37,676 [INFO] 10.108.14.139 - - [10/Mar/2026 14:28:37] "GET /weight?query=www.quackhacks.org HTTP/1.1" 200 -
+2026-03-10 14:32:46,394 [INFO] Loading model from: model_weights
+2026-03-10 14:32:46,395 [INFO] Temperature:        4.0
+2026-03-10 14:32:46,473 [INFO] Model loaded on device: cpu
+2026-03-10 14:32:46,475 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.108.14.139:3000
+2026-03-10 14:32:46,475 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-10 14:35:15,727 [INFO] Loading model from: model_weights
+2026-03-10 14:35:15,727 [INFO] Temperature:        4.0
+2026-03-10 14:35:15,809 [INFO] Model loaded on device: cpu
+2026-03-10 14:35:15,810 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.108.14.139:3000
+2026-03-10 14:35:15,810 [INFO] [33mPress CTRL+C to quit[0m
+2026-03-10 14:40:43,577 [INFO] Query: 'Qw.boT.attacker.com'                                         Score: 0.8353  Temp: 4.0
+2026-03-10 14:40:43,577 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=Qw.boT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,614 [INFO] Query: 'UA.yLc.attacker.com'                                         Score: 0.8411  Temp: 4.0
+2026-03-10 14:40:43,614 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.yLc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,651 [INFO] Query: 'UA.caS.attacker.com'                                         Score: 0.0782  Temp: 4.0
+2026-03-10 14:40:43,652 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.caS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,689 [INFO] Query: 'UA.UIr.attacker.com'                                         Score: 0.6980  Temp: 4.0
+2026-03-10 14:40:43,689 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.UIr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,726 [INFO] Query: 'UA.oBQ.attacker.com'                                         Score: 0.9166  Temp: 4.0
+2026-03-10 14:40:43,726 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.oBQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,762 [INFO] Query: 'UA.Onv.attacker.com'                                         Score: 0.3301  Temp: 4.0
+2026-03-10 14:40:43,763 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.Onv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,798 [INFO] Query: 'UA.anc.attacker.com'                                         Score: 0.3643  Temp: 4.0
+2026-03-10 14:40:43,798 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.anc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,837 [INFO] Query: 'UA.RDk.attacker.com'                                         Score: 0.9027  Temp: 4.0
+2026-03-10 14:40:43,838 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.RDk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,872 [INFO] Query: 'UA.ouE.attacker.com'                                         Score: 0.7622  Temp: 4.0
+2026-03-10 14:40:43,873 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.ouE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,909 [INFO] Query: 'UA.Tpo.attacker.com'                                         Score: 0.4919  Temp: 4.0
+2026-03-10 14:40:43,910 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.Tpo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,947 [INFO] Query: 'UA.FgJ.attacker.com'                                         Score: 0.9273  Temp: 4.0
+2026-03-10 14:40:43,947 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.FgJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:43,985 [INFO] Query: 'UA.mwI.attacker.com'                                         Score: 0.8715  Temp: 4.0
+2026-03-10 14:40:43,985 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:43] "GET /weight?query=UA.mwI.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,020 [INFO] Query: 'UA.bBh.attacker.com'                                         Score: 0.9165  Temp: 4.0
+2026-03-10 14:40:44,021 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.bBh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,058 [INFO] Query: 'UA.eql.attacker.com'                                         Score: 0.9121  Temp: 4.0
+2026-03-10 14:40:44,058 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.eql.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,094 [INFO] Query: 'UA.arC.attacker.com'                                         Score: 0.0795  Temp: 4.0
+2026-03-10 14:40:44,094 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.arC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,131 [INFO] Query: 'UA.aKk.attacker.com'                                         Score: 0.9015  Temp: 4.0
+2026-03-10 14:40:44,132 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.aKk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,169 [INFO] Query: 'UA.VmV.attacker.com'                                         Score: 0.9011  Temp: 4.0
+2026-03-10 14:40:44,169 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.VmV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,206 [INFO] Query: 'UA.HsQ.attacker.com'                                         Score: 0.9262  Temp: 4.0
+2026-03-10 14:40:44,206 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.HsQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,241 [INFO] Query: 'UA.BBG.attacker.com'                                         Score: 0.0784  Temp: 4.0
+2026-03-10 14:40:44,242 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.BBG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,278 [INFO] Query: 'UA.kMG.attacker.com'                                         Score: 0.9091  Temp: 4.0
+2026-03-10 14:40:44,279 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.kMG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,314 [INFO] Query: 'UA.rNN.attacker.com'                                         Score: 0.1093  Temp: 4.0
+2026-03-10 14:40:44,314 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.rNN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,351 [INFO] Query: 'UA.ADe.attacker.com'                                         Score: 0.0753  Temp: 4.0
+2026-03-10 14:40:44,352 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.ADe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,390 [INFO] Query: 'UA.wNM.attacker.com'                                         Score: 0.8667  Temp: 4.0
+2026-03-10 14:40:44,390 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.wNM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,425 [INFO] Query: 'UA.QeS.attacker.com'                                         Score: 0.8349  Temp: 4.0
+2026-03-10 14:40:44,426 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.QeS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,461 [INFO] Query: 'UA.QPt.attacker.com'                                         Score: 0.9241  Temp: 4.0
+2026-03-10 14:40:44,462 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.QPt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,497 [INFO] Query: 'UA.Hxk.attacker.com'                                         Score: 0.9262  Temp: 4.0
+2026-03-10 14:40:44,497 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.Hxk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,538 [INFO] Query: 'UA.pNv.attacker.com'                                         Score: 0.9162  Temp: 4.0
+2026-03-10 14:40:44,539 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.pNv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,576 [INFO] Query: 'UA.ATq.attacker.com'                                         Score: 0.8932  Temp: 4.0
+2026-03-10 14:40:44,576 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.ATq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,611 [INFO] Query: 'RlM.szS.attacker.com'                                        Score: 0.9248  Temp: 4.0
+2026-03-10 14:40:44,612 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=RlM.szS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,652 [INFO] Query: 'ZG5zX3R1.XMf.attacker.com'                                   Score: 0.9295  Temp: 4.0
+2026-03-10 14:40:44,652 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=ZG5zX3R1.XMf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,693 [INFO] Query: 'bm5lbGVy.TLO.attacker.com'                                   Score: 0.9300  Temp: 4.0
+2026-03-10 14:40:44,694 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=bm5lbGVy.TLO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,733 [INFO] Query: 'LnB5CnJl.nDg.attacker.com'                                   Score: 0.9297  Temp: 4.0
+2026-03-10 14:40:44,733 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=LnB5CnJl.nDg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,773 [INFO] Query: 'cXVpcmVt.mNE.attacker.com'                                   Score: 0.9292  Temp: 4.0
+2026-03-10 14:40:44,774 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=cXVpcmVt.mNE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,813 [INFO] Query: 'ZW50cy50.KPq.attacker.com'                                   Score: 0.9291  Temp: 4.0
+2026-03-10 14:40:44,813 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=ZW50cy50.KPq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,852 [INFO] Query: 'eHQKdmVu.WTj.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:40:44,852 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=eHQKdmVu.WTj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,887 [INFO] Query: 'dgo.uEU.attacker.com'                                        Score: 0.9258  Temp: 4.0
+2026-03-10 14:40:44,887 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=dgo.uEU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,922 [INFO] Query: 'RkU.epe.attacker.com'                                        Score: 0.9231  Temp: 4.0
+2026-03-10 14:40:44,923 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=RkU.epe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,959 [INFO] Query: 'UA.VaY.attacker.com'                                         Score: 0.8413  Temp: 4.0
+2026-03-10 14:40:44,959 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.VaY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:44,997 [INFO] Query: 'UA.JNd.attacker.com'                                         Score: 0.9237  Temp: 4.0
+2026-03-10 14:40:44,997 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:44] "GET /weight?query=UA.JNd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,035 [INFO] Query: 'UA.oBu.attacker.com'                                         Score: 0.4978  Temp: 4.0
+2026-03-10 14:40:45,036 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.oBu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,071 [INFO] Query: 'UA.dDA.attacker.com'                                         Score: 0.9056  Temp: 4.0
+2026-03-10 14:40:45,072 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.dDA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,109 [INFO] Query: 'UA.EWG.attacker.com'                                         Score: 0.9076  Temp: 4.0
+2026-03-10 14:40:45,109 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.EWG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,146 [INFO] Query: 'UA.znA.attacker.com'                                         Score: 0.9066  Temp: 4.0
+2026-03-10 14:40:45,146 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.znA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,184 [INFO] Query: 'UA.VOx.attacker.com'                                         Score: 0.0836  Temp: 4.0
+2026-03-10 14:40:45,185 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.VOx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,222 [INFO] Query: 'UA.RVb.attacker.com'                                         Score: 0.0823  Temp: 4.0
+2026-03-10 14:40:45,222 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.RVb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,258 [INFO] Query: 'UA.OkZ.attacker.com'                                         Score: 0.9227  Temp: 4.0
+2026-03-10 14:40:45,258 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.OkZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,297 [INFO] Query: 'UA.iJv.attacker.com'                                         Score: 0.9199  Temp: 4.0
+2026-03-10 14:40:45,297 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.iJv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,334 [INFO] Query: 'UA.ehx.attacker.com'                                         Score: 0.9225  Temp: 4.0
+2026-03-10 14:40:45,334 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.ehx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,372 [INFO] Query: 'UA.dvG.attacker.com'                                         Score: 0.9133  Temp: 4.0
+2026-03-10 14:40:45,372 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.dvG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,407 [INFO] Query: 'UA.mXZ.attacker.com'                                         Score: 0.9250  Temp: 4.0
+2026-03-10 14:40:45,407 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.mXZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,444 [INFO] Query: 'Qw.wac.attacker.com'                                         Score: 0.9192  Temp: 4.0
+2026-03-10 14:40:45,444 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=Qw.wac.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,481 [INFO] Query: 'UA.sxD.attacker.com'                                         Score: 0.9242  Temp: 4.0
+2026-03-10 14:40:45,481 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.sxD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,519 [INFO] Query: 'UA.ZkM.attacker.com'                                         Score: 0.9231  Temp: 4.0
+2026-03-10 14:40:45,520 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.ZkM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,553 [INFO] Query: 'UA.RLF.attacker.com'                                         Score: 0.9247  Temp: 4.0
+2026-03-10 14:40:45,554 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.RLF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,594 [INFO] Query: 'UA.ANb.attacker.com'                                         Score: 0.1649  Temp: 4.0
+2026-03-10 14:40:45,595 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.ANb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,630 [INFO] Query: 'UA.oiH.attacker.com'                                         Score: 0.4604  Temp: 4.0
+2026-03-10 14:40:45,631 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.oiH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,668 [INFO] Query: 'UA.Wch.attacker.com'                                         Score: 0.9166  Temp: 4.0
+2026-03-10 14:40:45,668 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.Wch.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,705 [INFO] Query: 'UA.Wcf.attacker.com'                                         Score: 0.8539  Temp: 4.0
+2026-03-10 14:40:45,705 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.Wcf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,742 [INFO] Query: 'UA.PAR.attacker.com'                                         Score: 0.0747  Temp: 4.0
+2026-03-10 14:40:45,743 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.PAR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,779 [INFO] Query: 'UA.OWc.attacker.com'                                         Score: 0.0989  Temp: 4.0
+2026-03-10 14:40:45,780 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.OWc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,821 [INFO] Query: 'UA.cye.attacker.com'                                         Score: 0.0908  Temp: 4.0
+2026-03-10 14:40:45,821 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.cye.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,856 [INFO] Query: 'UA.Pys.attacker.com'                                         Score: 0.1325  Temp: 4.0
+2026-03-10 14:40:45,857 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.Pys.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,893 [INFO] Query: 'UA.Omh.attacker.com'                                         Score: 0.9141  Temp: 4.0
+2026-03-10 14:40:45,894 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.Omh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,930 [INFO] Query: 'UA.nQF.attacker.com'                                         Score: 0.9223  Temp: 4.0
+2026-03-10 14:40:45,931 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.nQF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:45,967 [INFO] Query: 'UA.Mbu.attacker.com'                                         Score: 0.8628  Temp: 4.0
+2026-03-10 14:40:45,967 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:45] "GET /weight?query=UA.Mbu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,007 [INFO] Query: 'UA.NFf.attacker.com'                                         Score: 0.5560  Temp: 4.0
+2026-03-10 14:40:46,007 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.NFf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,044 [INFO] Query: 'UA.trB.attacker.com'                                         Score: 0.0866  Temp: 4.0
+2026-03-10 14:40:46,044 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.trB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,082 [INFO] Query: 'UA.oNB.attacker.com'                                         Score: 0.1031  Temp: 4.0
+2026-03-10 14:40:46,082 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.oNB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,121 [INFO] Query: 'UA.tdC.attacker.com'                                         Score: 0.4390  Temp: 4.0
+2026-03-10 14:40:46,121 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.tdC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,157 [INFO] Query: 'UA.gDl.attacker.com'                                         Score: 0.9092  Temp: 4.0
+2026-03-10 14:40:46,158 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.gDl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,193 [INFO] Query: 'UA.mUE.attacker.com'                                         Score: 0.7648  Temp: 4.0
+2026-03-10 14:40:46,193 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.mUE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,229 [INFO] Query: 'UA.rjn.attacker.com'                                         Score: 0.9065  Temp: 4.0
+2026-03-10 14:40:46,229 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.rjn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,266 [INFO] Query: 'UA.lRL.attacker.com'                                         Score: 0.9188  Temp: 4.0
+2026-03-10 14:40:46,266 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.lRL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,303 [INFO] Query: 'UA.LKg.attacker.com'                                         Score: 0.9225  Temp: 4.0
+2026-03-10 14:40:46,303 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.LKg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,341 [INFO] Query: 'UA.VaI.attacker.com'                                         Score: 0.7434  Temp: 4.0
+2026-03-10 14:40:46,341 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.VaI.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,377 [INFO] Query: 'UA.Cyq.attacker.com'                                         Score: 0.9072  Temp: 4.0
+2026-03-10 14:40:46,377 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.Cyq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,415 [INFO] Query: 'UA.nwB.attacker.com'                                         Score: 0.9043  Temp: 4.0
+2026-03-10 14:40:46,415 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.nwB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,452 [INFO] Query: 'UA.BUP.attacker.com'                                         Score: 0.1324  Temp: 4.0
+2026-03-10 14:40:46,452 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.BUP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,487 [INFO] Query: 'UA.DkC.attacker.com'                                         Score: 0.1318  Temp: 4.0
+2026-03-10 14:40:46,488 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.DkC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,525 [INFO] Query: 'UA.rPQ.attacker.com'                                         Score: 0.9231  Temp: 4.0
+2026-03-10 14:40:46,525 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.rPQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,562 [INFO] Query: 'UA.hFj.attacker.com'                                         Score: 0.9275  Temp: 4.0
+2026-03-10 14:40:46,562 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.hFj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,599 [INFO] Query: 'UA.RSd.attacker.com'                                         Score: 0.6413  Temp: 4.0
+2026-03-10 14:40:46,599 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.RSd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,633 [INFO] Query: 'UA.FXc.attacker.com'                                         Score: 0.9195  Temp: 4.0
+2026-03-10 14:40:46,634 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.FXc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,670 [INFO] Query: 'UA.fIO.attacker.com'                                         Score: 0.8948  Temp: 4.0
+2026-03-10 14:40:46,671 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=UA.fIO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,707 [INFO] Query: 'RlM.iBA.attacker.com'                                        Score: 0.9131  Temp: 4.0
+2026-03-10 14:40:46,707 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=RlM.iBA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,744 [INFO] Query: 'ZG5zX3R1.Xos.attacker.com'                                   Score: 0.9292  Temp: 4.0
+2026-03-10 14:40:46,744 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=ZG5zX3R1.Xos.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,782 [INFO] Query: 'bm5lbGVy.hus.attacker.com'                                   Score: 0.9294  Temp: 4.0
+2026-03-10 14:40:46,783 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=bm5lbGVy.hus.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,823 [INFO] Query: 'LnB5CnJl.vGn.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:40:46,823 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=LnB5CnJl.vGn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,860 [INFO] Query: 'cXVpcmVt.ust.attacker.com'                                   Score: 0.9292  Temp: 4.0
+2026-03-10 14:40:46,861 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=cXVpcmVt.ust.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,899 [INFO] Query: 'ZW50cy50.ORv.attacker.com'                                   Score: 0.9284  Temp: 4.0
+2026-03-10 14:40:46,899 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=ZW50cy50.ORv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,939 [INFO] Query: 'eHQKdmVu.XLr.attacker.com'                                   Score: 0.9295  Temp: 4.0
+2026-03-10 14:40:46,939 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=eHQKdmVu.XLr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:46,974 [INFO] Query: 'dgo.LLJ.attacker.com'                                        Score: 0.9275  Temp: 4.0
+2026-03-10 14:40:46,974 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:46] "GET /weight?query=dgo.LLJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,010 [INFO] Query: 'RkU.Pen.attacker.com'                                        Score: 0.7936  Temp: 4.0
+2026-03-10 14:40:47,010 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=RkU.Pen.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,047 [INFO] Query: 'UA.NrM.attacker.com'                                         Score: 0.2885  Temp: 4.0
+2026-03-10 14:40:47,048 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.NrM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,084 [INFO] Query: 'UA.NrD.attacker.com'                                         Score: 0.0980  Temp: 4.0
+2026-03-10 14:40:47,084 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.NrD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,128 [INFO] Query: 'UA.pgH.attacker.com'                                         Score: 0.8438  Temp: 4.0
+2026-03-10 14:40:47,128 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.pgH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,165 [INFO] Query: 'UA.wwg.attacker.com'                                         Score: 0.9151  Temp: 4.0
+2026-03-10 14:40:47,165 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.wwg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,201 [INFO] Query: 'UA.qeW.attacker.com'                                         Score: 0.9224  Temp: 4.0
+2026-03-10 14:40:47,202 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.qeW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,240 [INFO] Query: 'UA.VqT.attacker.com'                                         Score: 0.9221  Temp: 4.0
+2026-03-10 14:40:47,241 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.VqT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,277 [INFO] Query: 'UA.DYS.attacker.com'                                         Score: 0.8924  Temp: 4.0
+2026-03-10 14:40:47,277 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.DYS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,314 [INFO] Query: 'UA.HCc.attacker.com'                                         Score: 0.9026  Temp: 4.0
+2026-03-10 14:40:47,315 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.HCc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,355 [INFO] Query: 'UA.LoG.attacker.com'                                         Score: 0.0754  Temp: 4.0
+2026-03-10 14:40:47,356 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.LoG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,389 [INFO] Query: 'UA.rsS.attacker.com'                                         Score: 0.0797  Temp: 4.0
+2026-03-10 14:40:47,390 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.rsS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,425 [INFO] Query: 'UA.rSg.attacker.com'                                         Score: 0.8220  Temp: 4.0
+2026-03-10 14:40:47,426 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.rSg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,460 [INFO] Query: 'UA.tFt.attacker.com'                                         Score: 0.7439  Temp: 4.0
+2026-03-10 14:40:47,460 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.tFt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,495 [INFO] Query: 'UA.fAX.attacker.com'                                         Score: 0.0849  Temp: 4.0
+2026-03-10 14:40:47,496 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.fAX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,532 [INFO] Query: 'UA.imY.attacker.com'                                         Score: 0.2070  Temp: 4.0
+2026-03-10 14:40:47,532 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.imY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,570 [INFO] Query: 'UA.zlt.attacker.com'                                         Score: 0.9244  Temp: 4.0
+2026-03-10 14:40:47,570 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.zlt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,604 [INFO] Query: 'UA.LDM.attacker.com'                                         Score: 0.5742  Temp: 4.0
+2026-03-10 14:40:47,604 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.LDM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,639 [INFO] Query: 'UA.mfs.attacker.com'                                         Score: 0.5625  Temp: 4.0
+2026-03-10 14:40:47,639 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.mfs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,676 [INFO] Query: 'UA.GNW.attacker.com'                                         Score: 0.9190  Temp: 4.0
+2026-03-10 14:40:47,677 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.GNW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,714 [INFO] Query: 'UA.wgs.attacker.com'                                         Score: 0.8721  Temp: 4.0
+2026-03-10 14:40:47,715 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.wgs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,750 [INFO] Query: 'UA.tEA.attacker.com'                                         Score: 0.1527  Temp: 4.0
+2026-03-10 14:40:47,751 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.tEA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,789 [INFO] Query: 'UA.zPo.attacker.com'                                         Score: 0.9180  Temp: 4.0
+2026-03-10 14:40:47,790 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.zPo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,824 [INFO] Query: 'UA.iGF.attacker.com'                                         Score: 0.9162  Temp: 4.0
+2026-03-10 14:40:47,824 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.iGF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,860 [INFO] Query: 'UA.rXd.attacker.com'                                         Score: 0.9239  Temp: 4.0
+2026-03-10 14:40:47,861 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.rXd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,896 [INFO] Query: 'UA.TVC.attacker.com'                                         Score: 0.0742  Temp: 4.0
+2026-03-10 14:40:47,897 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.TVC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,933 [INFO] Query: 'UA.sOb.attacker.com'                                         Score: 0.1841  Temp: 4.0
+2026-03-10 14:40:47,934 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.sOb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:47,969 [INFO] Query: 'UA.SRj.attacker.com'                                         Score: 0.9223  Temp: 4.0
+2026-03-10 14:40:47,970 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:47] "GET /weight?query=UA.SRj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,005 [INFO] Query: 'UA.JGU.attacker.com'                                         Score: 0.9256  Temp: 4.0
+2026-03-10 14:40:48,006 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.JGU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,042 [INFO] Query: 'UA.CCH.attacker.com'                                         Score: 0.1243  Temp: 4.0
+2026-03-10 14:40:48,043 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.CCH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,078 [INFO] Query: 'UA.GoF.attacker.com'                                         Score: 0.9063  Temp: 4.0
+2026-03-10 14:40:48,079 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.GoF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,114 [INFO] Query: 'UA.pPo.attacker.com'                                         Score: 0.3931  Temp: 4.0
+2026-03-10 14:40:48,115 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.pPo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,150 [INFO] Query: 'UA.Rzn.attacker.com'                                         Score: 0.9126  Temp: 4.0
+2026-03-10 14:40:48,150 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.Rzn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,187 [INFO] Query: 'UA.feO.attacker.com'                                         Score: 0.8092  Temp: 4.0
+2026-03-10 14:40:48,187 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.feO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,223 [INFO] Query: 'UA.zsu.attacker.com'                                         Score: 0.9251  Temp: 4.0
+2026-03-10 14:40:48,223 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.zsu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,262 [INFO] Query: 'UA.jIA.attacker.com'                                         Score: 0.2722  Temp: 4.0
+2026-03-10 14:40:48,262 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.jIA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,297 [INFO] Query: 'UA.YfA.attacker.com'                                         Score: 0.9234  Temp: 4.0
+2026-03-10 14:40:48,297 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.YfA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,335 [INFO] Query: 'UA.ZJK.attacker.com'                                         Score: 0.9263  Temp: 4.0
+2026-03-10 14:40:48,335 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.ZJK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,371 [INFO] Query: 'UA.aBJ.attacker.com'                                         Score: 0.9174  Temp: 4.0
+2026-03-10 14:40:48,371 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.aBJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,408 [INFO] Query: 'UA.RwN.attacker.com'                                         Score: 0.8858  Temp: 4.0
+2026-03-10 14:40:48,408 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.RwN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,446 [INFO] Query: 'UA.XMj.attacker.com'                                         Score: 0.9238  Temp: 4.0
+2026-03-10 14:40:48,446 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.XMj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,484 [INFO] Query: 'UA.yWg.attacker.com'                                         Score: 0.9237  Temp: 4.0
+2026-03-10 14:40:48,484 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.yWg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,519 [INFO] Query: 'UA.UEm.attacker.com'                                         Score: 0.8102  Temp: 4.0
+2026-03-10 14:40:48,519 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.UEm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,556 [INFO] Query: 'UA.MNX.attacker.com'                                         Score: 0.9211  Temp: 4.0
+2026-03-10 14:40:48,556 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.MNX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,590 [INFO] Query: 'UA.hFM.attacker.com'                                         Score: 0.9194  Temp: 4.0
+2026-03-10 14:40:48,591 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.hFM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,626 [INFO] Query: 'UA.wNp.attacker.com'                                         Score: 0.8892  Temp: 4.0
+2026-03-10 14:40:48,626 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.wNp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,662 [INFO] Query: 'UA.YLd.attacker.com'                                         Score: 0.9219  Temp: 4.0
+2026-03-10 14:40:48,662 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.YLd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,698 [INFO] Query: 'UA.jTR.attacker.com'                                         Score: 0.9107  Temp: 4.0
+2026-03-10 14:40:48,698 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.jTR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,734 [INFO] Query: 'UA.lKp.attacker.com'                                         Score: 0.9183  Temp: 4.0
+2026-03-10 14:40:48,735 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.lKp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,769 [INFO] Query: 'UA.DCa.attacker.com'                                         Score: 0.8991  Temp: 4.0
+2026-03-10 14:40:48,769 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.DCa.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,805 [INFO] Query: 'UA.BqH.attacker.com'                                         Score: 0.9219  Temp: 4.0
+2026-03-10 14:40:48,805 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.BqH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,842 [INFO] Query: 'UA.jpg.attacker.com'                                         Score: 0.0837  Temp: 4.0
+2026-03-10 14:40:48,842 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.jpg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,878 [INFO] Query: 'UA.KPC.attacker.com'                                         Score: 0.8719  Temp: 4.0
+2026-03-10 14:40:48,878 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.KPC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,915 [INFO] Query: 'UA.vpv.attacker.com'                                         Score: 0.9164  Temp: 4.0
+2026-03-10 14:40:48,916 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.vpv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,952 [INFO] Query: 'UA.nUt.attacker.com'                                         Score: 0.0814  Temp: 4.0
+2026-03-10 14:40:48,952 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.nUt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:48,988 [INFO] Query: 'UA.WVI.attacker.com'                                         Score: 0.9194  Temp: 4.0
+2026-03-10 14:40:48,988 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:48] "GET /weight?query=UA.WVI.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,027 [INFO] Query: 'UA.lMb.attacker.com'                                         Score: 0.9043  Temp: 4.0
+2026-03-10 14:40:49,027 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.lMb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,061 [INFO] Query: 'UA.EtN.attacker.com'                                         Score: 0.0784  Temp: 4.0
+2026-03-10 14:40:49,061 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.EtN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,097 [INFO] Query: 'UA.QDO.attacker.com'                                         Score: 0.9212  Temp: 4.0
+2026-03-10 14:40:49,097 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.QDO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,136 [INFO] Query: 'UA.TQA.attacker.com'                                         Score: 0.9194  Temp: 4.0
+2026-03-10 14:40:49,136 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.TQA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,173 [INFO] Query: 'UA.lUj.attacker.com'                                         Score: 0.9059  Temp: 4.0
+2026-03-10 14:40:49,173 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.lUj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,208 [INFO] Query: 'UA.fKU.attacker.com'                                         Score: 0.9200  Temp: 4.0
+2026-03-10 14:40:49,208 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.fKU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,248 [INFO] Query: 'UA.Lvc.attacker.com'                                         Score: 0.8417  Temp: 4.0
+2026-03-10 14:40:49,248 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.Lvc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,285 [INFO] Query: 'UA.ReS.attacker.com'                                         Score: 0.0764  Temp: 4.0
+2026-03-10 14:40:49,285 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.ReS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,321 [INFO] Query: 'UA.ZRK.attacker.com'                                         Score: 0.9254  Temp: 4.0
+2026-03-10 14:40:49,321 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.ZRK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,358 [INFO] Query: 'UA.xVX.attacker.com'                                         Score: 0.9263  Temp: 4.0
+2026-03-10 14:40:49,358 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.xVX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,393 [INFO] Query: 'UA.Lzm.attacker.com'                                         Score: 0.9146  Temp: 4.0
+2026-03-10 14:40:49,394 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.Lzm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,432 [INFO] Query: 'UA.NIs.attacker.com'                                         Score: 0.0751  Temp: 4.0
+2026-03-10 14:40:49,433 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.NIs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,468 [INFO] Query: 'UA.keR.attacker.com'                                         Score: 0.0773  Temp: 4.0
+2026-03-10 14:40:49,469 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.keR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,504 [INFO] Query: 'UA.LOt.attacker.com'                                         Score: 0.0779  Temp: 4.0
+2026-03-10 14:40:49,505 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.LOt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,540 [INFO] Query: 'UA.qDD.attacker.com'                                         Score: 0.9246  Temp: 4.0
+2026-03-10 14:40:49,541 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.qDD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,579 [INFO] Query: 'UA.brA.attacker.com'                                         Score: 0.1126  Temp: 4.0
+2026-03-10 14:40:49,580 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.brA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,618 [INFO] Query: 'UA.jAV.attacker.com'                                         Score: 0.3441  Temp: 4.0
+2026-03-10 14:40:49,618 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.jAV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,654 [INFO] Query: 'UA.EKx.attacker.com'                                         Score: 0.9183  Temp: 4.0
+2026-03-10 14:40:49,654 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.EKx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,687 [INFO] Query: 'UA.HaB.attacker.com'                                         Score: 0.2734  Temp: 4.0
+2026-03-10 14:40:49,688 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.HaB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,724 [INFO] Query: 'UA.OnO.attacker.com'                                         Score: 0.1209  Temp: 4.0
+2026-03-10 14:40:49,724 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.OnO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,759 [INFO] Query: 'UA.trx.attacker.com'                                         Score: 0.6572  Temp: 4.0
+2026-03-10 14:40:49,759 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.trx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,799 [INFO] Query: 'UA.HOR.attacker.com'                                         Score: 0.6987  Temp: 4.0
+2026-03-10 14:40:49,799 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.HOR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,836 [INFO] Query: 'UA.NnO.attacker.com'                                         Score: 0.0821  Temp: 4.0
+2026-03-10 14:40:49,837 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.NnO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,872 [INFO] Query: 'UA.nwk.attacker.com'                                         Score: 0.9033  Temp: 4.0
+2026-03-10 14:40:49,873 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.nwk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,910 [INFO] Query: 'UA.HRf.attacker.com'                                         Score: 0.9220  Temp: 4.0
+2026-03-10 14:40:49,910 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.HRf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,945 [INFO] Query: 'UA.MfW.attacker.com'                                         Score: 0.9214  Temp: 4.0
+2026-03-10 14:40:49,946 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.MfW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:49,984 [INFO] Query: 'UA.ZZi.attacker.com'                                         Score: 0.9121  Temp: 4.0
+2026-03-10 14:40:49,985 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:49] "GET /weight?query=UA.ZZi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,021 [INFO] Query: 'UA.bRD.attacker.com'                                         Score: 0.3161  Temp: 4.0
+2026-03-10 14:40:50,021 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.bRD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,055 [INFO] Query: 'UA.vrN.attacker.com'                                         Score: 0.8939  Temp: 4.0
+2026-03-10 14:40:50,056 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.vrN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,092 [INFO] Query: 'UA.nqa.attacker.com'                                         Score: 0.8598  Temp: 4.0
+2026-03-10 14:40:50,092 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.nqa.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,129 [INFO] Query: 'RlM.UKK.attacker.com'                                        Score: 0.9246  Temp: 4.0
+2026-03-10 14:40:50,129 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=RlM.UKK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,167 [INFO] Query: 'ZG5zX3R1.HmQ.attacker.com'                                   Score: 0.9295  Temp: 4.0
+2026-03-10 14:40:50,168 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=ZG5zX3R1.HmQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,204 [INFO] Query: 'bm5lbGVy.ZHi.attacker.com'                                   Score: 0.9298  Temp: 4.0
+2026-03-10 14:40:50,205 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=bm5lbGVy.ZHi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,242 [INFO] Query: 'LnB5CnJl.yxH.attacker.com'                                   Score: 0.9299  Temp: 4.0
+2026-03-10 14:40:50,242 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=LnB5CnJl.yxH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,278 [INFO] Query: 'cXVpcmVt.IyQ.attacker.com'                                   Score: 0.9298  Temp: 4.0
+2026-03-10 14:40:50,279 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=cXVpcmVt.IyQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,319 [INFO] Query: 'ZW50cy50.RPy.attacker.com'                                   Score: 0.9290  Temp: 4.0
+2026-03-10 14:40:50,320 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=ZW50cy50.RPy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,356 [INFO] Query: 'eHQKdmVu.OGA.attacker.com'                                   Score: 0.9291  Temp: 4.0
+2026-03-10 14:40:50,356 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=eHQKdmVu.OGA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,394 [INFO] Query: 'dgp2aXJ1.mHv.attacker.com'                                   Score: 0.9298  Temp: 4.0
+2026-03-10 14:40:50,395 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=dgp2aXJ1.mHv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,433 [INFO] Query: 'cy50eHQK.SpI.attacker.com'                                   Score: 0.9292  Temp: 4.0
+2026-03-10 14:40:50,433 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=cy50eHQK.SpI.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,470 [INFO] Query: 'RkU.POx.attacker.com'                                        Score: 0.9247  Temp: 4.0
+2026-03-10 14:40:50,470 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=RkU.POx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,505 [INFO] Query: 'UA.jfj.attacker.com'                                         Score: 0.9276  Temp: 4.0
+2026-03-10 14:40:50,506 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.jfj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,543 [INFO] Query: 'UA.jad.attacker.com'                                         Score: 0.7036  Temp: 4.0
+2026-03-10 14:40:50,543 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.jad.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,579 [INFO] Query: 'UA.fJp.attacker.com'                                         Score: 0.2932  Temp: 4.0
+2026-03-10 14:40:50,579 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.fJp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,616 [INFO] Query: 'UA.Gpp.attacker.com'                                         Score: 0.3324  Temp: 4.0
+2026-03-10 14:40:50,616 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.Gpp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,652 [INFO] Query: 'UA.TKQ.attacker.com'                                         Score: 0.9257  Temp: 4.0
+2026-03-10 14:40:50,652 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.TKQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,689 [INFO] Query: 'UA.dpK.attacker.com'                                         Score: 0.9080  Temp: 4.0
+2026-03-10 14:40:50,689 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.dpK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,724 [INFO] Query: 'UA.cLx.attacker.com'                                         Score: 0.1031  Temp: 4.0
+2026-03-10 14:40:50,724 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.cLx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,759 [INFO] Query: 'UA.mmg.attacker.com'                                         Score: 0.8397  Temp: 4.0
+2026-03-10 14:40:50,759 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.mmg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,796 [INFO] Query: 'UA.UKl.attacker.com'                                         Score: 0.8936  Temp: 4.0
+2026-03-10 14:40:50,796 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.UKl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,832 [INFO] Query: 'UA.taM.attacker.com'                                         Score: 0.7981  Temp: 4.0
+2026-03-10 14:40:50,833 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.taM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,869 [INFO] Query: 'UA.FGz.attacker.com'                                         Score: 0.9265  Temp: 4.0
+2026-03-10 14:40:50,869 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.FGz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,906 [INFO] Query: 'UA.Nmh.attacker.com'                                         Score: 0.8002  Temp: 4.0
+2026-03-10 14:40:50,906 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.Nmh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,940 [INFO] Query: 'UA.Tnr.attacker.com'                                         Score: 0.4678  Temp: 4.0
+2026-03-10 14:40:50,940 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.Tnr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:50,978 [INFO] Query: 'UA.JtN.attacker.com'                                         Score: 0.9200  Temp: 4.0
+2026-03-10 14:40:50,978 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:50] "GET /weight?query=UA.JtN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,016 [INFO] Query: 'UA.YQs.attacker.com'                                         Score: 0.9173  Temp: 4.0
+2026-03-10 14:40:51,017 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.YQs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,055 [INFO] Query: 'UA.PIc.attacker.com'                                         Score: 0.0775  Temp: 4.0
+2026-03-10 14:40:51,055 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.PIc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,091 [INFO] Query: 'UA.NCi.attacker.com'                                         Score: 0.0938  Temp: 4.0
+2026-03-10 14:40:51,092 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.NCi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,128 [INFO] Query: 'UA.rGC.attacker.com'                                         Score: 0.4201  Temp: 4.0
+2026-03-10 14:40:51,128 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.rGC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,167 [INFO] Query: 'UA.bLz.attacker.com'                                         Score: 0.9156  Temp: 4.0
+2026-03-10 14:40:51,167 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.bLz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,201 [INFO] Query: 'UA.AzS.attacker.com'                                         Score: 0.0774  Temp: 4.0
+2026-03-10 14:40:51,201 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.AzS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,238 [INFO] Query: 'UA.jsn.attacker.com'                                         Score: 0.8563  Temp: 4.0
+2026-03-10 14:40:51,238 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.jsn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,274 [INFO] Query: 'UA.JHt.attacker.com'                                         Score: 0.9234  Temp: 4.0
+2026-03-10 14:40:51,274 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.JHt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,312 [INFO] Query: 'UA.cJv.attacker.com'                                         Score: 0.9176  Temp: 4.0
+2026-03-10 14:40:51,312 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.cJv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,345 [INFO] Query: 'UA.usX.attacker.com'                                         Score: 0.1438  Temp: 4.0
+2026-03-10 14:40:51,346 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.usX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,383 [INFO] Query: 'UA.ajJ.attacker.com'                                         Score: 0.9233  Temp: 4.0
+2026-03-10 14:40:51,384 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.ajJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,415 [INFO] Query: 'UA.yWm.attacker.com'                                         Score: 0.9024  Temp: 4.0
+2026-03-10 14:40:51,415 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.yWm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,451 [INFO] Query: 'UA.VEq.attacker.com'                                         Score: 0.9218  Temp: 4.0
+2026-03-10 14:40:51,451 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.VEq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,490 [INFO] Query: 'RlM.Uxe.attacker.com'                                        Score: 0.9225  Temp: 4.0
+2026-03-10 14:40:51,490 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=RlM.Uxe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,528 [INFO] Query: 'G1tIG1tK.alm.attacker.com'                                   Score: 0.9288  Temp: 4.0
+2026-03-10 14:40:51,529 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=G1tIG1tK.alm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,565 [INFO] Query: 'RkU.mVQ.attacker.com'                                        Score: 0.9274  Temp: 4.0
+2026-03-10 14:40:51,565 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=RkU.mVQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,601 [INFO] Query: 'UA.HjZ.attacker.com'                                         Score: 0.9261  Temp: 4.0
+2026-03-10 14:40:51,601 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.HjZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,639 [INFO] Query: 'UA.cYP.attacker.com'                                         Score: 0.0995  Temp: 4.0
+2026-03-10 14:40:51,640 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.cYP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,674 [INFO] Query: 'UA.JxF.attacker.com'                                         Score: 0.9272  Temp: 4.0
+2026-03-10 14:40:51,675 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.JxF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,712 [INFO] Query: 'UA.Hbd.attacker.com'                                         Score: 0.9228  Temp: 4.0
+2026-03-10 14:40:51,712 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.Hbd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,746 [INFO] Query: 'UA.WIV.attacker.com'                                         Score: 0.8737  Temp: 4.0
+2026-03-10 14:40:51,746 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.WIV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,781 [INFO] Query: 'UA.RrV.attacker.com'                                         Score: 0.8765  Temp: 4.0
+2026-03-10 14:40:51,782 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.RrV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,819 [INFO] Query: 'UA.CGh.attacker.com'                                         Score: 0.5148  Temp: 4.0
+2026-03-10 14:40:51,819 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.CGh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,854 [INFO] Query: 'UA.Tpp.attacker.com'                                         Score: 0.1656  Temp: 4.0
+2026-03-10 14:40:51,854 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.Tpp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,891 [INFO] Query: 'UA.Ygm.attacker.com'                                         Score: 0.2181  Temp: 4.0
+2026-03-10 14:40:51,892 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.Ygm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,929 [INFO] Query: 'UA.ENR.attacker.com'                                         Score: 0.0849  Temp: 4.0
+2026-03-10 14:40:51,930 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.ENR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:51,964 [INFO] Query: 'UA.oaV.attacker.com'                                         Score: 0.8727  Temp: 4.0
+2026-03-10 14:40:51,964 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:51] "GET /weight?query=UA.oaV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,002 [INFO] Query: 'UA.gej.attacker.com'                                         Score: 0.9114  Temp: 4.0
+2026-03-10 14:40:52,002 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.gej.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,036 [INFO] Query: 'UA.tyZ.attacker.com'                                         Score: 0.9178  Temp: 4.0
+2026-03-10 14:40:52,037 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.tyZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,072 [INFO] Query: 'UA.hDm.attacker.com'                                         Score: 0.7318  Temp: 4.0
+2026-03-10 14:40:52,072 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.hDm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,106 [INFO] Query: 'UA.uTT.attacker.com'                                         Score: 0.5561  Temp: 4.0
+2026-03-10 14:40:52,106 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.uTT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,142 [INFO] Query: 'UA.RDW.attacker.com'                                         Score: 0.9127  Temp: 4.0
+2026-03-10 14:40:52,143 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.RDW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,179 [INFO] Query: 'UA.qrD.attacker.com'                                         Score: 0.9229  Temp: 4.0
+2026-03-10 14:40:52,179 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.qrD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,216 [INFO] Query: 'UA.rof.attacker.com'                                         Score: 0.9133  Temp: 4.0
+2026-03-10 14:40:52,216 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.rof.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,254 [INFO] Query: 'UA.qxf.attacker.com'                                         Score: 0.9268  Temp: 4.0
+2026-03-10 14:40:52,254 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.qxf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,291 [INFO] Query: 'UA.xqn.attacker.com'                                         Score: 0.9260  Temp: 4.0
+2026-03-10 14:40:52,291 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.xqn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,327 [INFO] Query: 'UA.cvr.attacker.com'                                         Score: 0.1427  Temp: 4.0
+2026-03-10 14:40:52,328 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.cvr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,362 [INFO] Query: 'UA.DMj.attacker.com'                                         Score: 0.9163  Temp: 4.0
+2026-03-10 14:40:52,363 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.DMj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,399 [INFO] Query: 'UA.KdX.attacker.com'                                         Score: 0.9219  Temp: 4.0
+2026-03-10 14:40:52,399 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.KdX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,432 [INFO] Query: 'UA.DVY.attacker.com'                                         Score: 0.9155  Temp: 4.0
+2026-03-10 14:40:52,433 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.DVY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,467 [INFO] Query: 'UA.sOB.attacker.com'                                         Score: 0.1841  Temp: 4.0
+2026-03-10 14:40:52,468 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.sOB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,504 [INFO] Query: 'UA.ssg.attacker.com'                                         Score: 0.8489  Temp: 4.0
+2026-03-10 14:40:52,504 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.ssg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,541 [INFO] Query: 'UA.qbl.attacker.com'                                         Score: 0.9226  Temp: 4.0
+2026-03-10 14:40:52,542 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.qbl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,577 [INFO] Query: 'UA.srF.attacker.com'                                         Score: 0.1493  Temp: 4.0
+2026-03-10 14:40:52,577 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.srF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,610 [INFO] Query: 'UA.PNG.attacker.com'                                         Score: 0.0835  Temp: 4.0
+2026-03-10 14:40:52,610 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.PNG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,646 [INFO] Query: 'UA.wZz.attacker.com'                                         Score: 0.9234  Temp: 4.0
+2026-03-10 14:40:52,646 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.wZz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,684 [INFO] Query: 'UA.ycX.attacker.com'                                         Score: 0.9245  Temp: 4.0
+2026-03-10 14:40:52,685 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.ycX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,722 [INFO] Query: 'UA.jdJ.attacker.com'                                         Score: 0.9253  Temp: 4.0
+2026-03-10 14:40:52,723 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.jdJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,760 [INFO] Query: 'UA.mGZ.attacker.com'                                         Score: 0.9227  Temp: 4.0
+2026-03-10 14:40:52,760 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.mGZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,796 [INFO] Query: 'UA.Cku.attacker.com'                                         Score: 0.6322  Temp: 4.0
+2026-03-10 14:40:52,796 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.Cku.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,831 [INFO] Query: 'UA.Axc.attacker.com'                                         Score: 0.1678  Temp: 4.0
+2026-03-10 14:40:52,832 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.Axc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,866 [INFO] Query: 'UA.mhK.attacker.com'                                         Score: 0.9153  Temp: 4.0
+2026-03-10 14:40:52,866 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.mhK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,901 [INFO] Query: 'UA.OkM.attacker.com'                                         Score: 0.2248  Temp: 4.0
+2026-03-10 14:40:52,901 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.OkM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,938 [INFO] Query: 'UA.cdB.attacker.com'                                         Score: 0.1063  Temp: 4.0
+2026-03-10 14:40:52,938 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.cdB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:52,976 [INFO] Query: 'UA.KbA.attacker.com'                                         Score: 0.9004  Temp: 4.0
+2026-03-10 14:40:52,976 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:52] "GET /weight?query=UA.KbA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,011 [INFO] Query: 'UA.nsv.attacker.com'                                         Score: 0.4225  Temp: 4.0
+2026-03-10 14:40:53,011 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.nsv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,047 [INFO] Query: 'UA.YLu.attacker.com'                                         Score: 0.9212  Temp: 4.0
+2026-03-10 14:40:53,048 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.YLu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,083 [INFO] Query: 'UA.Ebt.attacker.com'                                         Score: 0.3709  Temp: 4.0
+2026-03-10 14:40:53,084 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.Ebt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,120 [INFO] Query: 'UA.PYs.attacker.com'                                         Score: 0.1325  Temp: 4.0
+2026-03-10 14:40:53,120 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.PYs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,153 [INFO] Query: 'UA.Ldj.attacker.com'                                         Score: 0.9233  Temp: 4.0
+2026-03-10 14:40:53,154 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.Ldj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,188 [INFO] Query: 'UA.Pbu.attacker.com'                                         Score: 0.8899  Temp: 4.0
+2026-03-10 14:40:53,188 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.Pbu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,223 [INFO] Query: 'UA.nTm.attacker.com'                                         Score: 0.0766  Temp: 4.0
+2026-03-10 14:40:53,223 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.nTm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,262 [INFO] Query: 'UA.Foo.attacker.com'                                         Score: 0.4957  Temp: 4.0
+2026-03-10 14:40:53,262 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.Foo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,301 [INFO] Query: 'UA.LBB.attacker.com'                                         Score: 0.8980  Temp: 4.0
+2026-03-10 14:40:53,301 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.LBB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,336 [INFO] Query: 'UA.tph.attacker.com'                                         Score: 0.9086  Temp: 4.0
+2026-03-10 14:40:53,337 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.tph.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,372 [INFO] Query: 'UA.WHl.attacker.com'                                         Score: 0.9134  Temp: 4.0
+2026-03-10 14:40:53,372 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.WHl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,410 [INFO] Query: 'UA.QfO.attacker.com'                                         Score: 0.9247  Temp: 4.0
+2026-03-10 14:40:53,410 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.QfO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,450 [INFO] Query: 'UA.EMS.attacker.com'                                         Score: 0.1024  Temp: 4.0
+2026-03-10 14:40:53,451 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.EMS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,484 [INFO] Query: 'UA.mgl.attacker.com'                                         Score: 0.9131  Temp: 4.0
+2026-03-10 14:40:53,484 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.mgl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,518 [INFO] Query: 'UA.bVO.attacker.com'                                         Score: 0.8076  Temp: 4.0
+2026-03-10 14:40:53,519 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.bVO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,557 [INFO] Query: 'UA.Jhx.attacker.com'                                         Score: 0.9266  Temp: 4.0
+2026-03-10 14:40:53,557 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.Jhx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,594 [INFO] Query: 'UA.TzA.attacker.com'                                         Score: 0.9200  Temp: 4.0
+2026-03-10 14:40:53,594 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.TzA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,633 [INFO] Query: 'UA.nAX.attacker.com'                                         Score: 0.0868  Temp: 4.0
+2026-03-10 14:40:53,633 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.nAX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,669 [INFO] Query: 'UA.AzF.attacker.com'                                         Score: 0.8896  Temp: 4.0
+2026-03-10 14:40:53,670 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.AzF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,703 [INFO] Query: 'UA.RWq.attacker.com'                                         Score: 0.9257  Temp: 4.0
+2026-03-10 14:40:53,703 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.RWq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,739 [INFO] Query: 'UA.lxK.attacker.com'                                         Score: 0.9266  Temp: 4.0
+2026-03-10 14:40:53,739 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.lxK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,774 [INFO] Query: 'UA.RDQ.attacker.com'                                         Score: 0.9233  Temp: 4.0
+2026-03-10 14:40:53,774 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.RDQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,810 [INFO] Query: 'UA.IvS.attacker.com'                                         Score: 0.6604  Temp: 4.0
+2026-03-10 14:40:53,811 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.IvS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,844 [INFO] Query: 'UA.IgK.attacker.com'                                         Score: 0.9020  Temp: 4.0
+2026-03-10 14:40:53,844 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.IgK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,879 [INFO] Query: 'UA.arS.attacker.com'                                         Score: 0.0838  Temp: 4.0
+2026-03-10 14:40:53,880 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.arS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,914 [INFO] Query: 'UA.KvF.attacker.com'                                         Score: 0.9240  Temp: 4.0
+2026-03-10 14:40:53,915 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.KvF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,951 [INFO] Query: 'UA.MpL.attacker.com'                                         Score: 0.4714  Temp: 4.0
+2026-03-10 14:40:53,951 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.MpL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:53,988 [INFO] Query: 'UA.YcS.attacker.com'                                         Score: 0.8976  Temp: 4.0
+2026-03-10 14:40:53,988 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:53] "GET /weight?query=UA.YcS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,025 [INFO] Query: 'UA.lgB.attacker.com'                                         Score: 0.9061  Temp: 4.0
+2026-03-10 14:40:54,026 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.lgB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,064 [INFO] Query: 'UA.aqT.attacker.com'                                         Score: 0.9155  Temp: 4.0
+2026-03-10 14:40:54,065 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.aqT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,100 [INFO] Query: 'UA.wWu.attacker.com'                                         Score: 0.9130  Temp: 4.0
+2026-03-10 14:40:54,101 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.wWu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,136 [INFO] Query: 'UA.bue.attacker.com'                                         Score: 0.0819  Temp: 4.0
+2026-03-10 14:40:54,137 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.bue.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,173 [INFO] Query: 'UA.Eew.attacker.com'                                         Score: 0.8797  Temp: 4.0
+2026-03-10 14:40:54,173 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.Eew.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,209 [INFO] Query: 'UA.Frp.attacker.com'                                         Score: 0.9103  Temp: 4.0
+2026-03-10 14:40:54,209 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.Frp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,245 [INFO] Query: 'UA.sxo.attacker.com'                                         Score: 0.9132  Temp: 4.0
+2026-03-10 14:40:54,245 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.sxo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,283 [INFO] Query: 'UA.uIJ.attacker.com'                                         Score: 0.9177  Temp: 4.0
+2026-03-10 14:40:54,284 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.uIJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,319 [INFO] Query: 'UA.MMJ.attacker.com'                                         Score: 0.9246  Temp: 4.0
+2026-03-10 14:40:54,319 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.MMJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,360 [INFO] Query: 'UA.bwQ.attacker.com'                                         Score: 0.9226  Temp: 4.0
+2026-03-10 14:40:54,360 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.bwQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,397 [INFO] Query: 'UA.Twe.attacker.com'                                         Score: 0.8995  Temp: 4.0
+2026-03-10 14:40:54,397 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.Twe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,435 [INFO] Query: 'UA.SGl.attacker.com'                                         Score: 0.9152  Temp: 4.0
+2026-03-10 14:40:54,435 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.SGl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,469 [INFO] Query: 'UA.cOZ.attacker.com'                                         Score: 0.0819  Temp: 4.0
+2026-03-10 14:40:54,469 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.cOZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,504 [INFO] Query: 'UA.rfk.attacker.com'                                         Score: 0.8990  Temp: 4.0
+2026-03-10 14:40:54,504 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.rfk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,539 [INFO] Query: 'UA.MXH.attacker.com'                                         Score: 0.9251  Temp: 4.0
+2026-03-10 14:40:54,539 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.MXH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,574 [INFO] Query: 'UA.oMB.attacker.com'                                         Score: 0.4745  Temp: 4.0
+2026-03-10 14:40:54,574 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.oMB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,610 [INFO] Query: 'UA.vbX.attacker.com'                                         Score: 0.9241  Temp: 4.0
+2026-03-10 14:40:54,611 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.vbX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,651 [INFO] Query: 'UA.SaI.attacker.com'                                         Score: 0.1443  Temp: 4.0
+2026-03-10 14:40:54,651 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.SaI.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,686 [INFO] Query: 'UA.Kel.attacker.com'                                         Score: 0.1258  Temp: 4.0
+2026-03-10 14:40:54,686 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.Kel.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,724 [INFO] Query: 'RlM.BOf.attacker.com'                                        Score: 0.9270  Temp: 4.0
+2026-03-10 14:40:54,724 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=RlM.BOf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,765 [INFO] Query: 'L2Jpbi9z.rrj.attacker.com'                                   Score: 0.9298  Temp: 4.0
+2026-03-10 14:40:54,765 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=L2Jpbi9z.rrj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,803 [INFO] Query: 'aDogYzog.OtC.attacker.com'                                   Score: 0.9279  Temp: 4.0
+2026-03-10 14:40:54,804 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=aDogYzog.OtC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,841 [INFO] Query: 'bm90IGZv.vgh.attacker.com'                                   Score: 0.9289  Temp: 4.0
+2026-03-10 14:40:54,841 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=bm90IGZv.vgh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,879 [INFO] Query: 'dW5kCg.hSS.attacker.com'                                     Score: 0.9296  Temp: 4.0
+2026-03-10 14:40:54,880 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=dW5kCg.hSS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,916 [INFO] Query: 'RkU.EWN.attacker.com'                                        Score: 0.9243  Temp: 4.0
+2026-03-10 14:40:54,917 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=RkU.EWN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,951 [INFO] Query: 'UA.BGj.attacker.com'                                         Score: 0.9152  Temp: 4.0
+2026-03-10 14:40:54,951 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.BGj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:54,991 [INFO] Query: 'UA.BOc.attacker.com'                                         Score: 0.1251  Temp: 4.0
+2026-03-10 14:40:54,991 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:54] "GET /weight?query=UA.BOc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,034 [INFO] Query: 'UA.LNy.attacker.com'                                         Score: 0.1934  Temp: 4.0
+2026-03-10 14:40:55,034 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.LNy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,073 [INFO] Query: 'UA.KRU.attacker.com'                                         Score: 0.7799  Temp: 4.0
+2026-03-10 14:40:55,073 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.KRU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,109 [INFO] Query: 'UA.mby.attacker.com'                                         Score: 0.9050  Temp: 4.0
+2026-03-10 14:40:55,109 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.mby.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,147 [INFO] Query: 'UA.VIN.attacker.com'                                         Score: 0.1904  Temp: 4.0
+2026-03-10 14:40:55,147 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.VIN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,187 [INFO] Query: 'UA.yQz.attacker.com'                                         Score: 0.9262  Temp: 4.0
+2026-03-10 14:40:55,187 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.yQz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,222 [INFO] Query: 'Qw.LzR.attacker.com'                                         Score: 0.9236  Temp: 4.0
+2026-03-10 14:40:55,222 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=Qw.LzR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,257 [INFO] Query: 'UA.SMt.attacker.com'                                         Score: 0.2322  Temp: 4.0
+2026-03-10 14:40:55,258 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.SMt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,291 [INFO] Query: 'UA.wLN.attacker.com'                                         Score: 0.9211  Temp: 4.0
+2026-03-10 14:40:55,291 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.wLN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,328 [INFO] Query: 'UA.xMx.attacker.com'                                         Score: 0.9222  Temp: 4.0
+2026-03-10 14:40:55,328 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.xMx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,365 [INFO] Query: 'UA.mpr.attacker.com'                                         Score: 0.1055  Temp: 4.0
+2026-03-10 14:40:55,365 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.mpr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:40:55,404 [INFO] Query: 'UA.ZcM.attacker.com'                                         Score: 0.9252  Temp: 4.0
+2026-03-10 14:40:55,404 [INFO] 10.108.14.139 - - [10/Mar/2026 14:40:55] "GET /weight?query=UA.ZcM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:45,094 [INFO] Query: 'www.quackhacks.org'                                          Score: 0.0758  Temp: 4.0
+2026-03-10 14:43:45,094 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:45] "GET /weight?query=www.quackhacks.org HTTP/1.1" 200 -
+2026-03-10 14:43:55,165 [INFO] Query: 'Qw.Ups.attacker.com'                                         Score: 0.0889  Temp: 4.0
+2026-03-10 14:43:55,166 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=Qw.Ups.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,263 [INFO] Query: 'UA.Ahz.attacker.com'                                         Score: 0.9204  Temp: 4.0
+2026-03-10 14:43:55,263 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.Ahz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,365 [INFO] Query: 'UA.VcY.attacker.com'                                         Score: 0.9190  Temp: 4.0
+2026-03-10 14:43:55,366 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.VcY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,466 [INFO] Query: 'UA.xgp.attacker.com'                                         Score: 0.9230  Temp: 4.0
+2026-03-10 14:43:55,466 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.xgp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,569 [INFO] Query: 'UA.Zim.attacker.com'                                         Score: 0.8459  Temp: 4.0
+2026-03-10 14:43:55,569 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.Zim.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,673 [INFO] Query: 'UA.NHc.attacker.com'                                         Score: 0.2222  Temp: 4.0
+2026-03-10 14:43:55,673 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.NHc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,771 [INFO] Query: 'UA.PjU.attacker.com'                                         Score: 0.9193  Temp: 4.0
+2026-03-10 14:43:55,771 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.PjU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,876 [INFO] Query: 'UA.OGz.attacker.com'                                         Score: 0.9206  Temp: 4.0
+2026-03-10 14:43:55,877 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.OGz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:55,978 [INFO] Query: 'UA.tet.attacker.com'                                         Score: 0.1337  Temp: 4.0
+2026-03-10 14:43:55,979 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:55] "GET /weight?query=UA.tet.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,083 [INFO] Query: 'UA.JBJ.attacker.com'                                         Score: 0.9263  Temp: 4.0
+2026-03-10 14:43:56,083 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.JBJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,181 [INFO] Query: 'UA.Huj.attacker.com'                                         Score: 0.9178  Temp: 4.0
+2026-03-10 14:43:56,182 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.Huj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,287 [INFO] Query: 'UA.Tya.attacker.com'                                         Score: 0.9170  Temp: 4.0
+2026-03-10 14:43:56,288 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.Tya.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,387 [INFO] Query: 'UA.YME.attacker.com'                                         Score: 0.6386  Temp: 4.0
+2026-03-10 14:43:56,388 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.YME.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,488 [INFO] Query: 'UA.qqK.attacker.com'                                         Score: 0.9239  Temp: 4.0
+2026-03-10 14:43:56,488 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.qqK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,588 [INFO] Query: 'UA.fNJ.attacker.com'                                         Score: 0.9222  Temp: 4.0
+2026-03-10 14:43:56,589 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.fNJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,692 [INFO] Query: 'UA.fIp.attacker.com'                                         Score: 0.0779  Temp: 4.0
+2026-03-10 14:43:56,692 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.fIp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,794 [INFO] Query: 'UA.VTs.attacker.com'                                         Score: 0.6972  Temp: 4.0
+2026-03-10 14:43:56,794 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.VTs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,894 [INFO] Query: 'UA.hSd.attacker.com'                                         Score: 0.9080  Temp: 4.0
+2026-03-10 14:43:56,894 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.hSd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:56,998 [INFO] Query: 'UA.IwU.attacker.com'                                         Score: 0.8765  Temp: 4.0
+2026-03-10 14:43:56,998 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:56] "GET /weight?query=UA.IwU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,100 [INFO] Query: 'UA.Oif.attacker.com'                                         Score: 0.8877  Temp: 4.0
+2026-03-10 14:43:57,100 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.Oif.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,203 [INFO] Query: 'UA.rpu.attacker.com'                                         Score: 0.8951  Temp: 4.0
+2026-03-10 14:43:57,203 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.rpu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,305 [INFO] Query: 'UA.Xvz.attacker.com'                                         Score: 0.9265  Temp: 4.0
+2026-03-10 14:43:57,305 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.Xvz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,405 [INFO] Query: 'UA.OYt.attacker.com'                                         Score: 0.9193  Temp: 4.0
+2026-03-10 14:43:57,406 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.OYt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,508 [INFO] Query: 'UA.LeX.attacker.com'                                         Score: 0.4599  Temp: 4.0
+2026-03-10 14:43:57,508 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.LeX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,611 [INFO] Query: 'UA.qnH.attacker.com'                                         Score: 0.9246  Temp: 4.0
+2026-03-10 14:43:57,611 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.qnH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,711 [INFO] Query: 'UA.FZi.attacker.com'                                         Score: 0.9088  Temp: 4.0
+2026-03-10 14:43:57,711 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.FZi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,814 [INFO] Query: 'UA.qDB.attacker.com'                                         Score: 0.9190  Temp: 4.0
+2026-03-10 14:43:57,814 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.qDB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:57,915 [INFO] Query: 'UA.LdP.attacker.com'                                         Score: 0.8455  Temp: 4.0
+2026-03-10 14:43:57,915 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:57] "GET /weight?query=UA.LdP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,015 [INFO] Query: 'UA.PZF.attacker.com'                                         Score: 0.9244  Temp: 4.0
+2026-03-10 14:43:58,016 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.PZF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,119 [INFO] Query: 'UA.TQY.attacker.com'                                         Score: 0.9213  Temp: 4.0
+2026-03-10 14:43:58,120 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.TQY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,221 [INFO] Query: 'UA.Yik.attacker.com'                                         Score: 0.9117  Temp: 4.0
+2026-03-10 14:43:58,221 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.Yik.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,324 [INFO] Query: 'UA.qAe.attacker.com'                                         Score: 0.9131  Temp: 4.0
+2026-03-10 14:43:58,324 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.qAe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,427 [INFO] Query: 'UA.kzb.attacker.com'                                         Score: 0.9212  Temp: 4.0
+2026-03-10 14:43:58,427 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.kzb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,530 [INFO] Query: 'UA.WTw.attacker.com'                                         Score: 0.9184  Temp: 4.0
+2026-03-10 14:43:58,530 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.WTw.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,633 [INFO] Query: 'UA.Gbd.attacker.com'                                         Score: 0.9027  Temp: 4.0
+2026-03-10 14:43:58,634 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.Gbd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,736 [INFO] Query: 'UA.jle.attacker.com'                                         Score: 0.9217  Temp: 4.0
+2026-03-10 14:43:58,736 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.jle.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,835 [INFO] Query: 'UA.pYZ.attacker.com'                                         Score: 0.9196  Temp: 4.0
+2026-03-10 14:43:58,836 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.pYZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:58,938 [INFO] Query: 'UA.SFn.attacker.com'                                         Score: 0.1229  Temp: 4.0
+2026-03-10 14:43:58,938 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:58] "GET /weight?query=UA.SFn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,048 [INFO] Query: 'UA.PBt.attacker.com'                                         Score: 0.8941  Temp: 4.0
+2026-03-10 14:43:59,048 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=UA.PBt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,081 [INFO] Query: 'RlM.Mjx.attacker.com'                                        Score: 0.9274  Temp: 4.0
+2026-03-10 14:43:59,082 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=RlM.Mjx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,117 [INFO] Query: 'ZG5zX3R1.eFj.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:43:59,117 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=ZG5zX3R1.eFj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,157 [INFO] Query: 'bm5lbGVy.Sbb.attacker.com'                                   Score: 0.9300  Temp: 4.0
+2026-03-10 14:43:59,158 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=bm5lbGVy.Sbb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,258 [INFO] Query: 'LnB5CnJl.iOa.attacker.com'                                   Score: 0.9295  Temp: 4.0
+2026-03-10 14:43:59,258 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=LnB5CnJl.iOa.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,356 [INFO] Query: 'cXVpcmVt.qIN.attacker.com'                                   Score: 0.9287  Temp: 4.0
+2026-03-10 14:43:59,357 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=cXVpcmVt.qIN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,459 [INFO] Query: 'ZW50cy50.ceL.attacker.com'                                   Score: 0.9289  Temp: 4.0
+2026-03-10 14:43:59,460 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=ZW50cy50.ceL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,562 [INFO] Query: 'eHQKdmVu.Ttt.attacker.com'                                   Score: 0.9292  Temp: 4.0
+2026-03-10 14:43:59,562 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=eHQKdmVu.Ttt.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,663 [INFO] Query: 'dgp2aXJ1.Ygf.attacker.com'                                   Score: 0.9299  Temp: 4.0
+2026-03-10 14:43:59,663 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=dgp2aXJ1.Ygf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,764 [INFO] Query: 'cy50eHQK.EXX.attacker.com'                                   Score: 0.9289  Temp: 4.0
+2026-03-10 14:43:59,764 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=cy50eHQK.EXX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,871 [INFO] Query: 'RkU.EeB.attacker.com'                                        Score: 0.9251  Temp: 4.0
+2026-03-10 14:43:59,871 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=RkU.EeB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:43:59,970 [INFO] Query: 'UA.gcz.attacker.com'                                         Score: 0.0768  Temp: 4.0
+2026-03-10 14:43:59,970 [INFO] 10.108.14.139 - - [10/Mar/2026 14:43:59] "GET /weight?query=UA.gcz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,070 [INFO] Query: 'UA.sFU.attacker.com'                                         Score: 0.7599  Temp: 4.0
+2026-03-10 14:44:00,070 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.sFU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,173 [INFO] Query: 'UA.yXm.attacker.com'                                         Score: 0.9166  Temp: 4.0
+2026-03-10 14:44:00,173 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.yXm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,274 [INFO] Query: 'UA.lvZ.attacker.com'                                         Score: 0.9242  Temp: 4.0
+2026-03-10 14:44:00,275 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.lvZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,375 [INFO] Query: 'UA.epU.attacker.com'                                         Score: 0.2706  Temp: 4.0
+2026-03-10 14:44:00,375 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.epU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,478 [INFO] Query: 'UA.slx.attacker.com'                                         Score: 0.9185  Temp: 4.0
+2026-03-10 14:44:00,478 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.slx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,578 [INFO] Query: 'UA.FyN.attacker.com'                                         Score: 0.9157  Temp: 4.0
+2026-03-10 14:44:00,579 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.FyN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,682 [INFO] Query: 'UA.pmy.attacker.com'                                         Score: 0.8727  Temp: 4.0
+2026-03-10 14:44:00,682 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.pmy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,783 [INFO] Query: 'UA.AcS.attacker.com'                                         Score: 0.0923  Temp: 4.0
+2026-03-10 14:44:00,783 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.AcS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,885 [INFO] Query: 'UA.Tau.attacker.com'                                         Score: 0.6545  Temp: 4.0
+2026-03-10 14:44:00,885 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.Tau.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:00,985 [INFO] Query: 'UA.Sad.attacker.com'                                         Score: 0.7039  Temp: 4.0
+2026-03-10 14:44:00,985 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:00] "GET /weight?query=UA.Sad.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,092 [INFO] Query: 'UA.GMA.attacker.com'                                         Score: 0.8427  Temp: 4.0
+2026-03-10 14:44:01,093 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.GMA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,194 [INFO] Query: 'UA.SgM.attacker.com'                                         Score: 0.8268  Temp: 4.0
+2026-03-10 14:44:01,194 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.SgM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,295 [INFO] Query: 'UA.vDP.attacker.com'                                         Score: 0.9194  Temp: 4.0
+2026-03-10 14:44:01,295 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.vDP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,396 [INFO] Query: 'UA.aok.attacker.com'                                         Score: 0.9053  Temp: 4.0
+2026-03-10 14:44:01,396 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.aok.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,499 [INFO] Query: 'UA.ABz.attacker.com'                                         Score: 0.9154  Temp: 4.0
+2026-03-10 14:44:01,499 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.ABz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,601 [INFO] Query: 'UA.AuT.attacker.com'                                         Score: 0.0942  Temp: 4.0
+2026-03-10 14:44:01,601 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.AuT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,701 [INFO] Query: 'UA.hDv.attacker.com'                                         Score: 0.9067  Temp: 4.0
+2026-03-10 14:44:01,701 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.hDv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,805 [INFO] Query: 'UA.yxn.attacker.com'                                         Score: 0.9184  Temp: 4.0
+2026-03-10 14:44:01,805 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.yxn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:01,908 [INFO] Query: 'UA.Jny.attacker.com'                                         Score: 0.9166  Temp: 4.0
+2026-03-10 14:44:01,908 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:01] "GET /weight?query=UA.Jny.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,013 [INFO] Query: 'UA.wET.attacker.com'                                         Score: 0.5328  Temp: 4.0
+2026-03-10 14:44:02,014 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=UA.wET.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,110 [INFO] Query: 'UA.oJS.attacker.com'                                         Score: 0.1146  Temp: 4.0
+2026-03-10 14:44:02,110 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=UA.oJS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,214 [INFO] Query: 'UA.rYe.attacker.com'                                         Score: 0.5466  Temp: 4.0
+2026-03-10 14:44:02,214 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=UA.rYe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,315 [INFO] Query: 'UA.TJJ.attacker.com'                                         Score: 0.9217  Temp: 4.0
+2026-03-10 14:44:02,315 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=UA.TJJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,417 [INFO] Query: 'UA.ZdI.attacker.com'                                         Score: 0.9128  Temp: 4.0
+2026-03-10 14:44:02,418 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=UA.ZdI.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,524 [INFO] Query: 'UA.dTj.attacker.com'                                         Score: 0.9248  Temp: 4.0
+2026-03-10 14:44:02,525 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=UA.dTj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,558 [INFO] Query: 'RlM.gpm.attacker.com'                                        Score: 0.9148  Temp: 4.0
+2026-03-10 14:44:02,558 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=RlM.gpm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,592 [INFO] Query: 'ZG5zX3R1.UQp.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:44:02,592 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=ZG5zX3R1.UQp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,630 [INFO] Query: 'bm5lbGVy.JoL.attacker.com'                                   Score: 0.9299  Temp: 4.0
+2026-03-10 14:44:02,630 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=bm5lbGVy.JoL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,732 [INFO] Query: 'LnB5CnJl.ovo.attacker.com'                                   Score: 0.9298  Temp: 4.0
+2026-03-10 14:44:02,732 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=LnB5CnJl.ovo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,835 [INFO] Query: 'cXVpcmVt.jkV.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:44:02,835 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=cXVpcmVt.jkV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:02,938 [INFO] Query: 'ZW50cy50.Wcj.attacker.com'                                   Score: 0.9289  Temp: 4.0
+2026-03-10 14:44:02,938 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:02] "GET /weight?query=ZW50cy50.Wcj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,037 [INFO] Query: 'eHQKdmVu.CoG.attacker.com'                                   Score: 0.9295  Temp: 4.0
+2026-03-10 14:44:03,037 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=eHQKdmVu.CoG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,140 [INFO] Query: 'dgp2aXJ1.SFG.attacker.com'                                   Score: 0.9299  Temp: 4.0
+2026-03-10 14:44:03,140 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=dgp2aXJ1.SFG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,241 [INFO] Query: 'cy50eHQK.yWk.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:44:03,242 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=cy50eHQK.yWk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,346 [INFO] Query: 'RkU.lZz.attacker.com'                                        Score: 0.9271  Temp: 4.0
+2026-03-10 14:44:03,346 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=RkU.lZz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,443 [INFO] Query: 'UA.hqT.attacker.com'                                         Score: 0.9247  Temp: 4.0
+2026-03-10 14:44:03,444 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=UA.hqT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,547 [INFO] Query: 'UA.JsB.attacker.com'                                         Score: 0.9135  Temp: 4.0
+2026-03-10 14:44:03,547 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=UA.JsB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,650 [INFO] Query: 'UA.JHU.attacker.com'                                         Score: 0.9246  Temp: 4.0
+2026-03-10 14:44:03,650 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=UA.JHU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,751 [INFO] Query: 'UA.QsX.attacker.com'                                         Score: 0.9253  Temp: 4.0
+2026-03-10 14:44:03,751 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=UA.QsX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,856 [INFO] Query: 'UA.Nwf.attacker.com'                                         Score: 0.7952  Temp: 4.0
+2026-03-10 14:44:03,856 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=UA.Nwf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:03,957 [INFO] Query: 'UA.dim.attacker.com'                                         Score: 0.6125  Temp: 4.0
+2026-03-10 14:44:03,958 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:03] "GET /weight?query=UA.dim.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,056 [INFO] Query: 'UA.yBS.attacker.com'                                         Score: 0.8864  Temp: 4.0
+2026-03-10 14:44:04,057 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.yBS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,161 [INFO] Query: 'UA.qgg.attacker.com'                                         Score: 0.9240  Temp: 4.0
+2026-03-10 14:44:04,161 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.qgg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,264 [INFO] Query: 'UA.OXK.attacker.com'                                         Score: 0.9227  Temp: 4.0
+2026-03-10 14:44:04,265 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.OXK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,366 [INFO] Query: 'UA.BsY.attacker.com'                                         Score: 0.0967  Temp: 4.0
+2026-03-10 14:44:04,366 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.BsY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,469 [INFO] Query: 'UA.YOm.attacker.com'                                         Score: 0.8877  Temp: 4.0
+2026-03-10 14:44:04,469 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.YOm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,569 [INFO] Query: 'UA.oyl.attacker.com'                                         Score: 0.9068  Temp: 4.0
+2026-03-10 14:44:04,569 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.oyl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,675 [INFO] Query: 'UA.vRC.attacker.com'                                         Score: 0.8510  Temp: 4.0
+2026-03-10 14:44:04,675 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.vRC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,774 [INFO] Query: 'UA.WAn.attacker.com'                                         Score: 0.2404  Temp: 4.0
+2026-03-10 14:44:04,774 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.WAn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,878 [INFO] Query: 'UA.QKq.attacker.com'                                         Score: 0.9260  Temp: 4.0
+2026-03-10 14:44:04,878 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.QKq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:04,980 [INFO] Query: 'UA.ICB.attacker.com'                                         Score: 0.1063  Temp: 4.0
+2026-03-10 14:44:04,980 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:04] "GET /weight?query=UA.ICB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,086 [INFO] Query: 'UA.Fbc.attacker.com'                                         Score: 0.4238  Temp: 4.0
+2026-03-10 14:44:05,086 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.Fbc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,184 [INFO] Query: 'UA.FCF.attacker.com'                                         Score: 0.9197  Temp: 4.0
+2026-03-10 14:44:05,184 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.FCF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,287 [INFO] Query: 'UA.XfE.attacker.com'                                         Score: 0.9205  Temp: 4.0
+2026-03-10 14:44:05,288 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.XfE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,388 [INFO] Query: 'UA.Zzb.attacker.com'                                         Score: 0.9251  Temp: 4.0
+2026-03-10 14:44:05,388 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.Zzb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,490 [INFO] Query: 'UA.zZS.attacker.com'                                         Score: 0.9162  Temp: 4.0
+2026-03-10 14:44:05,491 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.zZS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,591 [INFO] Query: 'UA.lEg.attacker.com'                                         Score: 0.1555  Temp: 4.0
+2026-03-10 14:44:05,591 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.lEg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,696 [INFO] Query: 'UA.Zoy.attacker.com'                                         Score: 0.9150  Temp: 4.0
+2026-03-10 14:44:05,696 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.Zoy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,799 [INFO] Query: 'UA.fMP.attacker.com'                                         Score: 0.3494  Temp: 4.0
+2026-03-10 14:44:05,799 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.fMP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:05,902 [INFO] Query: 'UA.TiG.attacker.com'                                         Score: 0.0979  Temp: 4.0
+2026-03-10 14:44:05,903 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:05] "GET /weight?query=UA.TiG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,002 [INFO] Query: 'UA.Eqg.attacker.com'                                         Score: 0.9179  Temp: 4.0
+2026-03-10 14:44:06,003 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.Eqg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,107 [INFO] Query: 'UA.YNc.attacker.com'                                         Score: 0.0775  Temp: 4.0
+2026-03-10 14:44:06,107 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.YNc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,206 [INFO] Query: 'UA.YzR.attacker.com'                                         Score: 0.8988  Temp: 4.0
+2026-03-10 14:44:06,206 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.YzR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,311 [INFO] Query: 'UA.Txy.attacker.com'                                         Score: 0.9215  Temp: 4.0
+2026-03-10 14:44:06,312 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.Txy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,412 [INFO] Query: 'UA.wff.attacker.com'                                         Score: 0.9161  Temp: 4.0
+2026-03-10 14:44:06,412 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.wff.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,514 [INFO] Query: 'UA.FlC.attacker.com'                                         Score: 0.3333  Temp: 4.0
+2026-03-10 14:44:06,515 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.FlC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,613 [INFO] Query: 'UA.Giw.attacker.com'                                         Score: 0.9093  Temp: 4.0
+2026-03-10 14:44:06,613 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.Giw.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,717 [INFO] Query: 'UA.bgZ.attacker.com'                                         Score: 0.8623  Temp: 4.0
+2026-03-10 14:44:06,718 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.bgZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,817 [INFO] Query: 'UA.RPm.attacker.com'                                         Score: 0.0956  Temp: 4.0
+2026-03-10 14:44:06,818 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.RPm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:06,920 [INFO] Query: 'UA.kCu.attacker.com'                                         Score: 0.9078  Temp: 4.0
+2026-03-10 14:44:06,920 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:06] "GET /weight?query=UA.kCu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,019 [INFO] Query: 'UA.ylZ.attacker.com'                                         Score: 0.9253  Temp: 4.0
+2026-03-10 14:44:07,019 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.ylZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,124 [INFO] Query: 'UA.Chq.attacker.com'                                         Score: 0.9056  Temp: 4.0
+2026-03-10 14:44:07,125 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.Chq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,227 [INFO] Query: 'UA.Wuv.attacker.com'                                         Score: 0.9177  Temp: 4.0
+2026-03-10 14:44:07,227 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.Wuv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,326 [INFO] Query: 'UA.vQx.attacker.com'                                         Score: 0.9255  Temp: 4.0
+2026-03-10 14:44:07,327 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.vQx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,430 [INFO] Query: 'UA.kIO.attacker.com'                                         Score: 0.8760  Temp: 4.0
+2026-03-10 14:44:07,430 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.kIO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,534 [INFO] Query: 'UA.LzF.attacker.com'                                         Score: 0.9259  Temp: 4.0
+2026-03-10 14:44:07,534 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.LzF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,636 [INFO] Query: 'UA.lix.attacker.com'                                         Score: 0.9010  Temp: 4.0
+2026-03-10 14:44:07,636 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.lix.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,736 [INFO] Query: 'UA.AzG.attacker.com'                                         Score: 0.1103  Temp: 4.0
+2026-03-10 14:44:07,736 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.AzG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,840 [INFO] Query: 'UA.kmT.attacker.com'                                         Score: 0.8590  Temp: 4.0
+2026-03-10 14:44:07,840 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.kmT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:07,940 [INFO] Query: 'UA.gmW.attacker.com'                                         Score: 0.8951  Temp: 4.0
+2026-03-10 14:44:07,941 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:07] "GET /weight?query=UA.gmW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,042 [INFO] Query: 'UA.hyX.attacker.com'                                         Score: 0.9261  Temp: 4.0
+2026-03-10 14:44:08,042 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.hyX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,144 [INFO] Query: 'UA.LRj.attacker.com'                                         Score: 0.9241  Temp: 4.0
+2026-03-10 14:44:08,145 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.LRj.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,247 [INFO] Query: 'UA.ewO.attacker.com'                                         Score: 0.9028  Temp: 4.0
+2026-03-10 14:44:08,247 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.ewO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,347 [INFO] Query: 'UA.aYE.attacker.com'                                         Score: 0.2152  Temp: 4.0
+2026-03-10 14:44:08,347 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.aYE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,450 [INFO] Query: 'UA.EZW.attacker.com'                                         Score: 0.9224  Temp: 4.0
+2026-03-10 14:44:08,450 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.EZW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,552 [INFO] Query: 'UA.OkM.attacker.com'                                         Score: 0.2248  Temp: 4.0
+2026-03-10 14:44:08,553 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.OkM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,653 [INFO] Query: 'UA.Fkw.attacker.com'                                         Score: 0.9238  Temp: 4.0
+2026-03-10 14:44:08,653 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.Fkw.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,754 [INFO] Query: 'UA.yaV.attacker.com'                                         Score: 0.9134  Temp: 4.0
+2026-03-10 14:44:08,755 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.yaV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,859 [INFO] Query: 'UA.kig.attacker.com'                                         Score: 0.5918  Temp: 4.0
+2026-03-10 14:44:08,859 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.kig.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:08,962 [INFO] Query: 'UA.cgx.attacker.com'                                         Score: 0.8885  Temp: 4.0
+2026-03-10 14:44:08,962 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:08] "GET /weight?query=UA.cgx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,063 [INFO] Query: 'UA.ELn.attacker.com'                                         Score: 0.3176  Temp: 4.0
+2026-03-10 14:44:09,063 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.ELn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,164 [INFO] Query: 'UA.Zzo.attacker.com'                                         Score: 0.9214  Temp: 4.0
+2026-03-10 14:44:09,164 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.Zzo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,268 [INFO] Query: 'UA.Wyz.attacker.com'                                         Score: 0.9207  Temp: 4.0
+2026-03-10 14:44:09,269 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.Wyz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,369 [INFO] Query: 'UA.OvL.attacker.com'                                         Score: 0.9099  Temp: 4.0
+2026-03-10 14:44:09,369 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.OvL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,472 [INFO] Query: 'UA.mcC.attacker.com'                                         Score: 0.5586  Temp: 4.0
+2026-03-10 14:44:09,473 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.mcC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,574 [INFO] Query: 'UA.rkZ.attacker.com'                                         Score: 0.9237  Temp: 4.0
+2026-03-10 14:44:09,574 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.rkZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,677 [INFO] Query: 'UA.hAL.attacker.com'                                         Score: 0.7891  Temp: 4.0
+2026-03-10 14:44:09,678 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.hAL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,779 [INFO] Query: 'UA.CVc.attacker.com'                                         Score: 0.1924  Temp: 4.0
+2026-03-10 14:44:09,779 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.CVc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,882 [INFO] Query: 'UA.Zti.attacker.com'                                         Score: 0.9055  Temp: 4.0
+2026-03-10 14:44:09,883 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.Zti.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:09,984 [INFO] Query: 'UA.BCd.attacker.com'                                         Score: 0.8892  Temp: 4.0
+2026-03-10 14:44:09,984 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:09] "GET /weight?query=UA.BCd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,085 [INFO] Query: 'UA.vKn.attacker.com'                                         Score: 0.9215  Temp: 4.0
+2026-03-10 14:44:10,085 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.vKn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,185 [INFO] Query: 'UA.znZ.attacker.com'                                         Score: 0.9259  Temp: 4.0
+2026-03-10 14:44:10,186 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.znZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,289 [INFO] Query: 'UA.IzK.attacker.com'                                         Score: 0.9060  Temp: 4.0
+2026-03-10 14:44:10,289 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.IzK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,388 [INFO] Query: 'UA.AVe.attacker.com'                                         Score: 0.1014  Temp: 4.0
+2026-03-10 14:44:10,388 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.AVe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,493 [INFO] Query: 'UA.KMO.attacker.com'                                         Score: 0.9043  Temp: 4.0
+2026-03-10 14:44:10,494 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.KMO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,594 [INFO] Query: 'UA.eUP.attacker.com'                                         Score: 0.7127  Temp: 4.0
+2026-03-10 14:44:10,594 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.eUP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,700 [INFO] Query: 'UA.AjL.attacker.com'                                         Score: 0.9062  Temp: 4.0
+2026-03-10 14:44:10,700 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.AjL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,800 [INFO] Query: 'UA.CRd.attacker.com'                                         Score: 0.0843  Temp: 4.0
+2026-03-10 14:44:10,800 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.CRd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:10,903 [INFO] Query: 'UA.Gqs.attacker.com'                                         Score: 0.8479  Temp: 4.0
+2026-03-10 14:44:10,903 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:10] "GET /weight?query=UA.Gqs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,006 [INFO] Query: 'UA.lGu.attacker.com'                                         Score: 0.9220  Temp: 4.0
+2026-03-10 14:44:11,007 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.lGu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,107 [INFO] Query: 'UA.tsv.attacker.com'                                         Score: 0.8582  Temp: 4.0
+2026-03-10 14:44:11,108 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.tsv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,210 [INFO] Query: 'UA.Vqe.attacker.com'                                         Score: 0.9217  Temp: 4.0
+2026-03-10 14:44:11,211 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.Vqe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,312 [INFO] Query: 'UA.YuE.attacker.com'                                         Score: 0.8186  Temp: 4.0
+2026-03-10 14:44:11,313 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.YuE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,414 [INFO] Query: 'UA.lBl.attacker.com'                                         Score: 0.9000  Temp: 4.0
+2026-03-10 14:44:11,415 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.lBl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,515 [INFO] Query: 'UA.WOU.attacker.com'                                         Score: 0.8833  Temp: 4.0
+2026-03-10 14:44:11,515 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.WOU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,620 [INFO] Query: 'UA.PXx.attacker.com'                                         Score: 0.9233  Temp: 4.0
+2026-03-10 14:44:11,620 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.PXx.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,720 [INFO] Query: 'UA.UCP.attacker.com'                                         Score: 0.3153  Temp: 4.0
+2026-03-10 14:44:11,721 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.UCP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,821 [INFO] Query: 'UA.nIN.attacker.com'                                         Score: 0.0742  Temp: 4.0
+2026-03-10 14:44:11,821 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.nIN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:11,923 [INFO] Query: 'UA.qBu.attacker.com'                                         Score: 0.9215  Temp: 4.0
+2026-03-10 14:44:11,923 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:11] "GET /weight?query=UA.qBu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,026 [INFO] Query: 'UA.Tvk.attacker.com'                                         Score: 0.0815  Temp: 4.0
+2026-03-10 14:44:12,027 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.Tvk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,127 [INFO] Query: 'UA.xpn.attacker.com'                                         Score: 0.1525  Temp: 4.0
+2026-03-10 14:44:12,127 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.xpn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,235 [INFO] Query: 'UA.ivA.attacker.com'                                         Score: 0.7304  Temp: 4.0
+2026-03-10 14:44:12,236 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.ivA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,334 [INFO] Query: 'UA.ZFr.attacker.com'                                         Score: 0.9257  Temp: 4.0
+2026-03-10 14:44:12,334 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.ZFr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,436 [INFO] Query: 'UA.Ecy.attacker.com'                                         Score: 0.2459  Temp: 4.0
+2026-03-10 14:44:12,436 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.Ecy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,537 [INFO] Query: 'UA.YXF.attacker.com'                                         Score: 0.9267  Temp: 4.0
+2026-03-10 14:44:12,537 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.YXF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,639 [INFO] Query: 'UA.QFv.attacker.com'                                         Score: 0.9241  Temp: 4.0
+2026-03-10 14:44:12,639 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.QFv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,742 [INFO] Query: 'UA.cvg.attacker.com'                                         Score: 0.3834  Temp: 4.0
+2026-03-10 14:44:12,742 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.cvg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,844 [INFO] Query: 'UA.eFq.attacker.com'                                         Score: 0.9230  Temp: 4.0
+2026-03-10 14:44:12,844 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.eFq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:12,948 [INFO] Query: 'UA.WgQ.attacker.com'                                         Score: 0.9256  Temp: 4.0
+2026-03-10 14:44:12,948 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:12] "GET /weight?query=UA.WgQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,049 [INFO] Query: 'UA.yNV.attacker.com'                                         Score: 0.9019  Temp: 4.0
+2026-03-10 14:44:13,049 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.yNV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,163 [INFO] Query: 'UA.gkV.attacker.com'                                         Score: 0.9171  Temp: 4.0
+2026-03-10 14:44:13,163 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.gkV.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,252 [INFO] Query: 'UA.gIM.attacker.com'                                         Score: 0.0947  Temp: 4.0
+2026-03-10 14:44:13,253 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.gIM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,366 [INFO] Query: 'UA.QdS.attacker.com'                                         Score: 0.8785  Temp: 4.0
+2026-03-10 14:44:13,367 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.QdS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,459 [INFO] Query: 'UA.OlH.attacker.com'                                         Score: 0.9087  Temp: 4.0
+2026-03-10 14:44:13,459 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.OlH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,558 [INFO] Query: 'UA.ubS.attacker.com'                                         Score: 0.1082  Temp: 4.0
+2026-03-10 14:44:13,558 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.ubS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,665 [INFO] Query: 'UA.PoT.attacker.com'                                         Score: 0.0933  Temp: 4.0
+2026-03-10 14:44:13,665 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.PoT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,766 [INFO] Query: 'UA.YEH.attacker.com'                                         Score: 0.9182  Temp: 4.0
+2026-03-10 14:44:13,767 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.YEH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,867 [INFO] Query: 'UA.bOy.attacker.com'                                         Score: 0.0873  Temp: 4.0
+2026-03-10 14:44:13,867 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.bOy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:13,971 [INFO] Query: 'UA.wjo.attacker.com'                                         Score: 0.9240  Temp: 4.0
+2026-03-10 14:44:13,971 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:13] "GET /weight?query=UA.wjo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,071 [INFO] Query: 'UA.usi.attacker.com'                                         Score: 0.0753  Temp: 4.0
+2026-03-10 14:44:14,071 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.usi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,178 [INFO] Query: 'UA.cxN.attacker.com'                                         Score: 0.8892  Temp: 4.0
+2026-03-10 14:44:14,178 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.cxN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,275 [INFO] Query: 'UA.MFs.attacker.com'                                         Score: 0.5625  Temp: 4.0
+2026-03-10 14:44:14,275 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.MFs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,374 [INFO] Query: 'UA.lZY.attacker.com'                                         Score: 0.9212  Temp: 4.0
+2026-03-10 14:44:14,375 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.lZY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,480 [INFO] Query: 'UA.NWv.attacker.com'                                         Score: 0.9179  Temp: 4.0
+2026-03-10 14:44:14,480 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.NWv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,582 [INFO] Query: 'UA.cVw.attacker.com'                                         Score: 0.9043  Temp: 4.0
+2026-03-10 14:44:14,582 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.cVw.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,683 [INFO] Query: 'UA.Pfc.attacker.com'                                         Score: 0.3249  Temp: 4.0
+2026-03-10 14:44:14,683 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.Pfc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,788 [INFO] Query: 'UA.qMr.attacker.com'                                         Score: 0.9238  Temp: 4.0
+2026-03-10 14:44:14,788 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.qMr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,887 [INFO] Query: 'UA.UwD.attacker.com'                                         Score: 0.9095  Temp: 4.0
+2026-03-10 14:44:14,887 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.UwD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:14,988 [INFO] Query: 'UA.lLo.attacker.com'                                         Score: 0.8879  Temp: 4.0
+2026-03-10 14:44:14,989 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:14] "GET /weight?query=UA.lLo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,092 [INFO] Query: 'UA.dsT.attacker.com'                                         Score: 0.1003  Temp: 4.0
+2026-03-10 14:44:15,092 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.dsT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,195 [INFO] Query: 'UA.iiZ.attacker.com'                                         Score: 0.8921  Temp: 4.0
+2026-03-10 14:44:15,195 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.iiZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,295 [INFO] Query: 'UA.ooa.attacker.com'                                         Score: 0.7755  Temp: 4.0
+2026-03-10 14:44:15,296 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.ooa.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,399 [INFO] Query: 'UA.IOD.attacker.com'                                         Score: 0.7801  Temp: 4.0
+2026-03-10 14:44:15,399 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.IOD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,500 [INFO] Query: 'UA.ERh.attacker.com'                                         Score: 0.5659  Temp: 4.0
+2026-03-10 14:44:15,501 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.ERh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,602 [INFO] Query: 'UA.wpC.attacker.com'                                         Score: 0.8300  Temp: 4.0
+2026-03-10 14:44:15,602 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.wpC.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,705 [INFO] Query: 'UA.QNf.attacker.com'                                         Score: 0.9263  Temp: 4.0
+2026-03-10 14:44:15,705 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.QNf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,804 [INFO] Query: 'UA.PRR.attacker.com'                                         Score: 0.1819  Temp: 4.0
+2026-03-10 14:44:15,805 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.PRR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:15,909 [INFO] Query: 'UA.DCi.attacker.com'                                         Score: 0.2102  Temp: 4.0
+2026-03-10 14:44:15,909 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:15] "GET /weight?query=UA.DCi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,011 [INFO] Query: 'UA.qko.attacker.com'                                         Score: 0.9163  Temp: 4.0
+2026-03-10 14:44:16,012 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.qko.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,112 [INFO] Query: 'UA.JGH.attacker.com'                                         Score: 0.9257  Temp: 4.0
+2026-03-10 14:44:16,112 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.JGH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,214 [INFO] Query: 'UA.KbG.attacker.com'                                         Score: 0.0830  Temp: 4.0
+2026-03-10 14:44:16,215 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.KbG.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,315 [INFO] Query: 'UA.vgE.attacker.com'                                         Score: 0.9156  Temp: 4.0
+2026-03-10 14:44:16,316 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.vgE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,418 [INFO] Query: 'UA.spN.attacker.com'                                         Score: 0.0760  Temp: 4.0
+2026-03-10 14:44:16,418 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.spN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,519 [INFO] Query: 'UA.RbQ.attacker.com'                                         Score: 0.9245  Temp: 4.0
+2026-03-10 14:44:16,520 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.RbQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,624 [INFO] Query: 'UA.zSE.attacker.com'                                         Score: 0.9231  Temp: 4.0
+2026-03-10 14:44:16,624 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.zSE.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,724 [INFO] Query: 'UA.LPT.attacker.com'                                         Score: 0.9081  Temp: 4.0
+2026-03-10 14:44:16,725 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.LPT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,826 [INFO] Query: 'UA.yyA.attacker.com'                                         Score: 0.9198  Temp: 4.0
+2026-03-10 14:44:16,827 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.yyA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:16,929 [INFO] Query: 'UA.VfA.attacker.com'                                         Score: 0.9222  Temp: 4.0
+2026-03-10 14:44:16,929 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:16] "GET /weight?query=UA.VfA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,032 [INFO] Query: 'UA.uyi.attacker.com'                                         Score: 0.6418  Temp: 4.0
+2026-03-10 14:44:17,033 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.uyi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,135 [INFO] Query: 'UA.bCo.attacker.com'                                         Score: 0.0957  Temp: 4.0
+2026-03-10 14:44:17,135 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.bCo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,236 [INFO] Query: 'UA.wsT.attacker.com'                                         Score: 0.8271  Temp: 4.0
+2026-03-10 14:44:17,237 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.wsT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,338 [INFO] Query: 'UA.LXv.attacker.com'                                         Score: 0.9264  Temp: 4.0
+2026-03-10 14:44:17,338 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.LXv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,441 [INFO] Query: 'UA.FjN.attacker.com'                                         Score: 0.9217  Temp: 4.0
+2026-03-10 14:44:17,441 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.FjN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,544 [INFO] Query: 'UA.nYP.attacker.com'                                         Score: 0.7302  Temp: 4.0
+2026-03-10 14:44:17,544 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.nYP.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,645 [INFO] Query: 'UA.owd.attacker.com'                                         Score: 0.9123  Temp: 4.0
+2026-03-10 14:44:17,645 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.owd.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,746 [INFO] Query: 'UA.hlJ.attacker.com'                                         Score: 0.9258  Temp: 4.0
+2026-03-10 14:44:17,747 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.hlJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,847 [INFO] Query: 'UA.XOH.attacker.com'                                         Score: 0.9227  Temp: 4.0
+2026-03-10 14:44:17,847 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.XOH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:17,951 [INFO] Query: 'UA.ZpX.attacker.com'                                         Score: 0.9244  Temp: 4.0
+2026-03-10 14:44:17,951 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:17] "GET /weight?query=UA.ZpX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,052 [INFO] Query: 'UA.owM.attacker.com'                                         Score: 0.2459  Temp: 4.0
+2026-03-10 14:44:18,052 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.owM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,153 [INFO] Query: 'UA.mlg.attacker.com'                                         Score: 0.9096  Temp: 4.0
+2026-03-10 14:44:18,153 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.mlg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,257 [INFO] Query: 'UA.yye.attacker.com'                                         Score: 0.9198  Temp: 4.0
+2026-03-10 14:44:18,258 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.yye.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,361 [INFO] Query: 'UA.LcY.attacker.com'                                         Score: 0.9065  Temp: 4.0
+2026-03-10 14:44:18,362 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.LcY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,460 [INFO] Query: 'UA.UlH.attacker.com'                                         Score: 0.8853  Temp: 4.0
+2026-03-10 14:44:18,460 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.UlH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,566 [INFO] Query: 'UA.Yvr.attacker.com'                                         Score: 0.8895  Temp: 4.0
+2026-03-10 14:44:18,567 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.Yvr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,664 [INFO] Query: 'UA.xry.attacker.com'                                         Score: 0.3448  Temp: 4.0
+2026-03-10 14:44:18,664 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.xry.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,766 [INFO] Query: 'UA.Rem.attacker.com'                                         Score: 0.1330  Temp: 4.0
+2026-03-10 14:44:18,766 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.Rem.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,870 [INFO] Query: 'UA.YDQ.attacker.com'                                         Score: 0.9246  Temp: 4.0
+2026-03-10 14:44:18,870 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.YDQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:18,974 [INFO] Query: 'UA.rpp.attacker.com'                                         Score: 0.7853  Temp: 4.0
+2026-03-10 14:44:18,974 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:18] "GET /weight?query=UA.rpp.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,075 [INFO] Query: 'UA.XkL.attacker.com'                                         Score: 0.9230  Temp: 4.0
+2026-03-10 14:44:19,076 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.XkL.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,180 [INFO] Query: 'UA.fHW.attacker.com'                                         Score: 0.9214  Temp: 4.0
+2026-03-10 14:44:19,180 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.fHW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,277 [INFO] Query: 'UA.enw.attacker.com'                                         Score: 0.8978  Temp: 4.0
+2026-03-10 14:44:19,277 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.enw.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,382 [INFO] Query: 'UA.Azk.attacker.com'                                         Score: 0.6721  Temp: 4.0
+2026-03-10 14:44:19,382 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.Azk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,482 [INFO] Query: 'UA.eai.attacker.com'                                         Score: 0.1986  Temp: 4.0
+2026-03-10 14:44:19,482 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.eai.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,583 [INFO] Query: 'UA.pob.attacker.com'                                         Score: 0.1243  Temp: 4.0
+2026-03-10 14:44:19,583 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.pob.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,687 [INFO] Query: 'UA.PCn.attacker.com'                                         Score: 0.1213  Temp: 4.0
+2026-03-10 14:44:19,687 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.PCn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,791 [INFO] Query: 'UA.neD.attacker.com'                                         Score: 0.0751  Temp: 4.0
+2026-03-10 14:44:19,792 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.neD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,889 [INFO] Query: 'UA.smh.attacker.com'                                         Score: 0.8995  Temp: 4.0
+2026-03-10 14:44:19,889 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.smh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:19,994 [INFO] Query: 'UA.ldY.attacker.com'                                         Score: 0.9043  Temp: 4.0
+2026-03-10 14:44:19,994 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:19] "GET /weight?query=UA.ldY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,097 [INFO] Query: 'UA.Ywu.attacker.com'                                         Score: 0.9180  Temp: 4.0
+2026-03-10 14:44:20,097 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.Ywu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,196 [INFO] Query: 'UA.XTo.attacker.com'                                         Score: 0.9164  Temp: 4.0
+2026-03-10 14:44:20,196 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.XTo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,298 [INFO] Query: 'UA.IMM.attacker.com'                                         Score: 0.5308  Temp: 4.0
+2026-03-10 14:44:20,299 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.IMM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,402 [INFO] Query: 'UA.CEy.attacker.com'                                         Score: 0.0751  Temp: 4.0
+2026-03-10 14:44:20,402 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.CEy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,503 [INFO] Query: 'UA.Gbg.attacker.com'                                         Score: 0.0791  Temp: 4.0
+2026-03-10 14:44:20,503 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.Gbg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,602 [INFO] Query: 'UA.gqc.attacker.com'                                         Score: 0.9215  Temp: 4.0
+2026-03-10 14:44:20,603 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.gqc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,707 [INFO] Query: 'UA.GxT.attacker.com'                                         Score: 0.9219  Temp: 4.0
+2026-03-10 14:44:20,707 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.GxT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,809 [INFO] Query: 'UA.RMg.attacker.com'                                         Score: 0.9137  Temp: 4.0
+2026-03-10 14:44:20,809 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.RMg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:20,913 [INFO] Query: 'UA.usy.attacker.com'                                         Score: 0.0763  Temp: 4.0
+2026-03-10 14:44:20,914 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:20] "GET /weight?query=UA.usy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,015 [INFO] Query: 'UA.sgq.attacker.com'                                         Score: 0.9256  Temp: 4.0
+2026-03-10 14:44:21,015 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.sgq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,115 [INFO] Query: 'UA.Puc.attacker.com'                                         Score: 0.1550  Temp: 4.0
+2026-03-10 14:44:21,116 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.Puc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,220 [INFO] Query: 'UA.Gkl.attacker.com'                                         Score: 0.9186  Temp: 4.0
+2026-03-10 14:44:21,220 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.Gkl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,319 [INFO] Query: 'UA.zlA.attacker.com'                                         Score: 0.5757  Temp: 4.0
+2026-03-10 14:44:21,320 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.zlA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,424 [INFO] Query: 'UA.oGk.attacker.com'                                         Score: 0.9110  Temp: 4.0
+2026-03-10 14:44:21,424 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.oGk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,527 [INFO] Query: 'UA.WIy.attacker.com'                                         Score: 0.9206  Temp: 4.0
+2026-03-10 14:44:21,528 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.WIy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,631 [INFO] Query: 'UA.eCs.attacker.com'                                         Score: 0.0804  Temp: 4.0
+2026-03-10 14:44:21,631 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.eCs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,734 [INFO] Query: 'UA.vED.attacker.com'                                         Score: 0.4161  Temp: 4.0
+2026-03-10 14:44:21,734 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.vED.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,836 [INFO] Query: 'UA.eiA.attacker.com'                                         Score: 0.1139  Temp: 4.0
+2026-03-10 14:44:21,836 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.eiA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:21,937 [INFO] Query: 'UA.NEq.attacker.com'                                         Score: 0.4313  Temp: 4.0
+2026-03-10 14:44:21,937 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:21] "GET /weight?query=UA.NEq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,041 [INFO] Query: 'UA.IMJ.attacker.com'                                         Score: 0.9166  Temp: 4.0
+2026-03-10 14:44:22,041 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.IMJ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,139 [INFO] Query: 'UA.GWN.attacker.com'                                         Score: 0.8863  Temp: 4.0
+2026-03-10 14:44:22,139 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.GWN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,241 [INFO] Query: 'UA.eeY.attacker.com'                                         Score: 0.2178  Temp: 4.0
+2026-03-10 14:44:22,241 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.eeY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,345 [INFO] Query: 'UA.Fdf.attacker.com'                                         Score: 0.9236  Temp: 4.0
+2026-03-10 14:44:22,345 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.Fdf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,445 [INFO] Query: 'UA.bye.attacker.com'                                         Score: 0.0891  Temp: 4.0
+2026-03-10 14:44:22,445 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.bye.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,551 [INFO] Query: 'UA.vBR.attacker.com'                                         Score: 0.9219  Temp: 4.0
+2026-03-10 14:44:22,551 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.vBR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,653 [INFO] Query: 'UA.ycU.attacker.com'                                         Score: 0.9190  Temp: 4.0
+2026-03-10 14:44:22,653 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.ycU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,756 [INFO] Query: 'UA.Ffa.attacker.com'                                         Score: 0.9071  Temp: 4.0
+2026-03-10 14:44:22,756 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.Ffa.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,862 [INFO] Query: 'UA.FEz.attacker.com'                                         Score: 0.9093  Temp: 4.0
+2026-03-10 14:44:22,862 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=UA.FEz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,896 [INFO] Query: 'RlM.iRm.attacker.com'                                        Score: 0.9128  Temp: 4.0
+2026-03-10 14:44:22,896 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=RlM.iRm.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,931 [INFO] Query: 'ZG5zX3R1.nCW.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:44:22,932 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=ZG5zX3R1.nCW.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:22,969 [INFO] Query: 'bm5lbGVy.NtR.attacker.com'                                   Score: 0.9298  Temp: 4.0
+2026-03-10 14:44:22,969 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:22] "GET /weight?query=bm5lbGVy.NtR.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,069 [INFO] Query: 'LnB5CnJl.Ugr.attacker.com'                                   Score: 0.9298  Temp: 4.0
+2026-03-10 14:44:23,070 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=LnB5CnJl.Ugr.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,173 [INFO] Query: 'cXVpcmVt.MGb.attacker.com'                                   Score: 0.9296  Temp: 4.0
+2026-03-10 14:44:23,174 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=cXVpcmVt.MGb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,278 [INFO] Query: 'ZW50cy50.Gcn.attacker.com'                                   Score: 0.9291  Temp: 4.0
+2026-03-10 14:44:23,278 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=ZW50cy50.Gcn.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,378 [INFO] Query: 'eHQKdmVu.sxZ.attacker.com'                                   Score: 0.9299  Temp: 4.0
+2026-03-10 14:44:23,379 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=eHQKdmVu.sxZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,480 [INFO] Query: 'dgp2aXJ1.LIM.attacker.com'                                   Score: 0.9292  Temp: 4.0
+2026-03-10 14:44:23,480 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=dgp2aXJ1.LIM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,585 [INFO] Query: 'cy50eHQK.Zfh.attacker.com'                                   Score: 0.9297  Temp: 4.0
+2026-03-10 14:44:23,585 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=cy50eHQK.Zfh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,684 [INFO] Query: 'RkU.WIu.attacker.com'                                        Score: 0.9260  Temp: 4.0
+2026-03-10 14:44:23,684 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=RkU.WIu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,783 [INFO] Query: 'UA.BRz.attacker.com'                                         Score: 0.8972  Temp: 4.0
+2026-03-10 14:44:23,783 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=UA.BRz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,888 [INFO] Query: 'UA.CbX.attacker.com'                                         Score: 0.8679  Temp: 4.0
+2026-03-10 14:44:23,889 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=UA.CbX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:23,988 [INFO] Query: 'UA.vYc.attacker.com'                                         Score: 0.9200  Temp: 4.0
+2026-03-10 14:44:23,989 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:23] "GET /weight?query=UA.vYc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,091 [INFO] Query: 'UA.gGu.attacker.com'                                         Score: 0.9157  Temp: 4.0
+2026-03-10 14:44:24,092 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.gGu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,193 [INFO] Query: 'UA.RPe.attacker.com'                                         Score: 0.8034  Temp: 4.0
+2026-03-10 14:44:24,193 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.RPe.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,294 [INFO] Query: 'UA.lEo.attacker.com'                                         Score: 0.1301  Temp: 4.0
+2026-03-10 14:44:24,294 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.lEo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,399 [INFO] Query: 'UA.hWS.attacker.com'                                         Score: 0.9009  Temp: 4.0
+2026-03-10 14:44:24,400 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.hWS.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,498 [INFO] Query: 'UA.keN.attacker.com'                                         Score: 0.0773  Temp: 4.0
+2026-03-10 14:44:24,499 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.keN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,601 [INFO] Query: 'UA.EyK.attacker.com'                                         Score: 0.9158  Temp: 4.0
+2026-03-10 14:44:24,602 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.EyK.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,703 [INFO] Query: 'UA.qSq.attacker.com'                                         Score: 0.9246  Temp: 4.0
+2026-03-10 14:44:24,703 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.qSq.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,806 [INFO] Query: 'UA.fFU.attacker.com'                                         Score: 0.8666  Temp: 4.0
+2026-03-10 14:44:24,806 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.fFU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:24,907 [INFO] Query: 'UA.vdD.attacker.com'                                         Score: 0.9160  Temp: 4.0
+2026-03-10 14:44:24,907 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:24] "GET /weight?query=UA.vdD.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,014 [INFO] Query: 'UA.mSY.attacker.com'                                         Score: 0.8002  Temp: 4.0
+2026-03-10 14:44:25,014 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.mSY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,111 [INFO] Query: 'UA.cUz.attacker.com'                                         Score: 0.1003  Temp: 4.0
+2026-03-10 14:44:25,111 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.cUz.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,212 [INFO] Query: 'UA.trQ.attacker.com'                                         Score: 0.9075  Temp: 4.0
+2026-03-10 14:44:25,213 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.trQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,314 [INFO] Query: 'UA.ELA.attacker.com'                                         Score: 0.1749  Temp: 4.0
+2026-03-10 14:44:25,314 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.ELA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,418 [INFO] Query: 'UA.sbf.attacker.com'                                         Score: 0.9214  Temp: 4.0
+2026-03-10 14:44:25,418 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.sbf.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,520 [INFO] Query: 'UA.Ecy.attacker.com'                                         Score: 0.2459  Temp: 4.0
+2026-03-10 14:44:25,520 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.Ecy.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,620 [INFO] Query: 'UA.FjT.attacker.com'                                         Score: 0.9242  Temp: 4.0
+2026-03-10 14:44:25,620 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.FjT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,724 [INFO] Query: 'UA.lVZ.attacker.com'                                         Score: 0.9242  Temp: 4.0
+2026-03-10 14:44:25,725 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.lVZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,827 [INFO] Query: 'UA.zin.attacker.com'                                         Score: 0.9026  Temp: 4.0
+2026-03-10 14:44:25,827 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.zin.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:25,930 [INFO] Query: 'UA.LLH.attacker.com'                                         Score: 0.9238  Temp: 4.0
+2026-03-10 14:44:25,930 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:25] "GET /weight?query=UA.LLH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,030 [INFO] Query: 'UA.Yqo.attacker.com'                                         Score: 0.9229  Temp: 4.0
+2026-03-10 14:44:26,030 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.Yqo.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,131 [INFO] Query: 'UA.Zvl.attacker.com'                                         Score: 0.9258  Temp: 4.0
+2026-03-10 14:44:26,131 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.Zvl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,234 [INFO] Query: 'UA.rnQ.attacker.com'                                         Score: 0.9245  Temp: 4.0
+2026-03-10 14:44:26,234 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.rnQ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,338 [INFO] Query: 'UA.sWI.attacker.com'                                         Score: 0.1592  Temp: 4.0
+2026-03-10 14:44:26,338 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.sWI.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,439 [INFO] Query: 'UA.CrB.attacker.com'                                         Score: 0.2346  Temp: 4.0
+2026-03-10 14:44:26,439 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.CrB.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,543 [INFO] Query: 'UA.ibh.attacker.com'                                         Score: 0.9024  Temp: 4.0
+2026-03-10 14:44:26,543 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.ibh.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,643 [INFO] Query: 'UA.KZc.attacker.com'                                         Score: 0.9213  Temp: 4.0
+2026-03-10 14:44:26,643 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.KZc.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,746 [INFO] Query: 'UA.zSY.attacker.com'                                         Score: 0.9234  Temp: 4.0
+2026-03-10 14:44:26,746 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.zSY.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,848 [INFO] Query: 'UA.YuA.attacker.com'                                         Score: 0.4634  Temp: 4.0
+2026-03-10 14:44:26,848 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.YuA.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:26,950 [INFO] Query: 'UA.oBZ.attacker.com'                                         Score: 0.8988  Temp: 4.0
+2026-03-10 14:44:26,950 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:26] "GET /weight?query=UA.oBZ.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:44:27,053 [INFO] Query: 'UA.RoM.attacker.com'                                         Score: 0.1063  Temp: 4.0
+2026-03-10 14:44:27,053 [INFO] 10.108.14.139 - - [10/Mar/2026 14:44:27] "GET /weight?query=UA.RoM.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:50:59,323 [INFO] Query: 'www.quackhacks.org'                                          Score: 0.0758  Temp: 4.0
+2026-03-10 14:50:59,324 [INFO] 10.108.14.139 - - [10/Mar/2026 14:50:59] "GET /weight?query=www.quackhacks.org HTTP/1.1" 200 -
+2026-03-10 14:54:28,892 [INFO] Query: 'www.quackhacks.org'                                          Score: 0.0758  Temp: 4.0
+2026-03-10 14:54:28,893 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:28] "GET /weight?query=www.quackhacks.org HTTP/1.1" 200 -
+2026-03-10 14:54:41,031 [INFO] Query: 'Qw.auX.attacker.com'                                         Score: 0.9165  Temp: 4.0
+2026-03-10 14:54:41,032 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:41] "GET /weight?query=Qw.auX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:42,034 [INFO] Query: 'UA.HlO.attacker.com'                                         Score: 0.9084  Temp: 4.0
+2026-03-10 14:54:42,034 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:42] "GET /weight?query=UA.HlO.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:43,038 [INFO] Query: 'UA.IcX.attacker.com'                                         Score: 0.9049  Temp: 4.0
+2026-03-10 14:54:43,038 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:43] "GET /weight?query=UA.IcX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:44,037 [INFO] Query: 'UA.IUN.attacker.com'                                         Score: 0.7718  Temp: 4.0
+2026-03-10 14:54:44,038 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:44] "GET /weight?query=UA.IUN.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:45,042 [INFO] Query: 'UA.UXU.attacker.com'                                         Score: 0.9016  Temp: 4.0
+2026-03-10 14:54:45,042 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:45] "GET /weight?query=UA.UXU.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:46,046 [INFO] Query: 'UA.IKT.attacker.com'                                         Score: 0.6662  Temp: 4.0
+2026-03-10 14:54:46,047 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:46] "GET /weight?query=UA.IKT.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:47,046 [INFO] Query: 'UA.rHv.attacker.com'                                         Score: 0.9179  Temp: 4.0
+2026-03-10 14:54:47,046 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:47] "GET /weight?query=UA.rHv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:48,049 [INFO] Query: 'UA.Ihl.attacker.com'                                         Score: 0.6745  Temp: 4.0
+2026-03-10 14:54:48,050 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:48] "GET /weight?query=UA.Ihl.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:49,052 [INFO] Query: 'UA.tHk.attacker.com'                                         Score: 0.9082  Temp: 4.0
+2026-03-10 14:54:49,052 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:49] "GET /weight?query=UA.tHk.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:50,051 [INFO] Query: 'UA.fqg.attacker.com'                                         Score: 0.9246  Temp: 4.0
+2026-03-10 14:54:50,051 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:50] "GET /weight?query=UA.fqg.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:51,056 [INFO] Query: 'UA.CgX.attacker.com'                                         Score: 0.8885  Temp: 4.0
+2026-03-10 14:54:51,056 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:51] "GET /weight?query=UA.CgX.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:52,055 [INFO] Query: 'UA.zWH.attacker.com'                                         Score: 0.9251  Temp: 4.0
+2026-03-10 14:54:52,055 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:52] "GET /weight?query=UA.zWH.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:53,060 [INFO] Query: 'UA.QMb.attacker.com'                                         Score: 0.9228  Temp: 4.0
+2026-03-10 14:54:53,060 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:53] "GET /weight?query=UA.QMb.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:54,063 [INFO] Query: 'UA.qsu.attacker.com'                                         Score: 0.9214  Temp: 4.0
+2026-03-10 14:54:54,063 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:54] "GET /weight?query=UA.qsu.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:55,064 [INFO] Query: 'UA.Dwv.attacker.com'                                         Score: 0.9226  Temp: 4.0
+2026-03-10 14:54:55,065 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:55] "GET /weight?query=UA.Dwv.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:56,065 [INFO] Query: 'UA.blF.attacker.com'                                         Score: 0.9149  Temp: 4.0
+2026-03-10 14:54:56,065 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:56] "GET /weight?query=UA.blF.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:57,069 [INFO] Query: 'UA.HUs.attacker.com'                                         Score: 0.1121  Temp: 4.0
+2026-03-10 14:54:57,069 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:57] "GET /weight?query=UA.HUs.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:54:58,070 [INFO] Query: 'UA.wZi.attacker.com'                                         Score: 0.9181  Temp: 4.0
+2026-03-10 14:54:58,070 [INFO] 10.108.14.139 - - [10/Mar/2026 14:54:58] "GET /weight?query=UA.wZi.attacker.com HTTP/1.1" 200 -
+2026-03-10 14:57:26,026 [INFO] Query: 'www.quackhacks.org'                                          Score: 0.0758  Temp: 4.0
+2026-03-10 14:57:26,026 [INFO] 10.108.14.139 - - [10/Mar/2026 14:57:26] "GET /weight?query=www.quackhacks.org HTTP/1.1" 200 -
+2026-03-10 14:57:38,259 [INFO] Query: 'Qw.EEp.attacker.com'                                         Score: 0.9152  Temp: 4.0
+2026-03-10 14:57:38,259 [INFO] 10.108.14.139 - - [10/Mar/2026 14:57:38] "GET /weight?query=Qw.EEp.attacker.com HTTP/1.1" 200 -
