@@ -21,7 +21,7 @@ class RuntimeGuardConfig:
         setup_logging(config)
         self.analyzers = parse_analyzer_types(config, tld_list)
         self.percentage_threshold = parse_percentage_threshold(config)
-        self.use_blacklist = parse_use_blacklist
+        self.use_blacklist = parse_use_blacklist(config)
 
 
 
