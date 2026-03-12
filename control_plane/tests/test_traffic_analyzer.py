@@ -23,7 +23,7 @@ def analyzer():
         minute_difference_threshold=5,
         num_queries_threshold=2,
         tld_list=["com"],
-        identifer="Traffic"
+        identifer="Traffic",
     )
 
 
@@ -67,7 +67,7 @@ def test_reaping(event: RecordEvent):
         minute_difference_threshold=0.001,
         num_queries_threshold=2,
         tld_list=["com"],
-        identifer="Traffic"
+        identifer="Traffic",
     )
 
     # update the timestamp each time an event is analyzed

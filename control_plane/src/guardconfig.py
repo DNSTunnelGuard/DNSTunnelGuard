@@ -15,20 +15,19 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class RuntimeGuardConfig: 
-    def __init__(self, config: ConfigParser, tld_list: DomainList, path: str): 
-        self.path = path 
+class RuntimeGuardConfig:
+    def __init__(self, config: ConfigParser, tld_list: DomainList, path: str):
+        self.path = path
         setup_logging(config)
         self.analyzers = parse_analyzer_types(config, tld_list)
         self.percentage_threshold = parse_percentage_threshold(config)
         self.use_blacklist = parse_use_blacklist(config)
 
 
-
-class GuardConfig: 
-    def __init__(self, config: ConfigParser, args, path: str): 
-        self.path = path 
-        self.args = args 
+class GuardConfig:
+    def __init__(self, config: ConfigParser, args, path: str):
+        self.path = path
+        self.args = args
         receiver, firewall = parse_guard_types(self.args, config)
         self.receiver = receiver
         self.firewall = firewall
@@ -39,26 +38,31 @@ class GuardConfig:
         self.server_port = parse_server_port(config)
 
 
-
-def parse_server_host(config: ConfigParser) -> str: 
+def parse_server_host(config: ConfigParser) -> str:
     return config["server"]["host"]
 
-def parse_server_port(config: ConfigParser) -> int: 
+
+def parse_server_port(config: ConfigParser) -> int:
     return int(config["server"]["port"])
 
-def get_configs(args) -> tuple[GuardConfig, RuntimeGuardConfig]: 
+
+def get_configs(args) -> tuple[GuardConfig, RuntimeGuardConfig]:
     config = ConfigParser()
     config.read(args.config_path)
 
     runtime_config = ConfigParser()
     runtime_config.read(args.runtime_config_path)
 
-    guard_config = GuardConfig(config, args, args.config_path) 
-    rt_guard_config = RuntimeGuardConfig(runtime_config, guard_config.tld_list, args.runtime_config_path) 
+    guard_config = GuardConfig(config, args, args.config_path)
+    rt_guard_config = RuntimeGuardConfig(
+        runtime_config, guard_config.tld_list, args.runtime_config_path
+    )
     return guard_config, rt_guard_config
 
 
-def load_guard_controller(guard_config: GuardConfig, runtime_config: RuntimeGuardConfig) -> GuardController: 
+def load_guard_controller(
+    guard_config: GuardConfig, runtime_config: RuntimeGuardConfig
+) -> GuardController:
     return GuardController(
         whitelists=guard_config.whitelists,
         analyzers=runtime_config.analyzers,
@@ -68,12 +72,16 @@ def load_guard_controller(guard_config: GuardConfig, runtime_config: RuntimeGuar
         tld_list=guard_config.tld_list,
     )
 
-def update_guard_controller(guard_controller: GuardController, runtime_config: RuntimeGuardConfig): 
+
+def update_guard_controller(
+    guard_controller: GuardController, runtime_config: RuntimeGuardConfig
+):
     guard_controller.analyzers = runtime_config.analyzers
     guard_controller.sus_percentage_threshold = runtime_config.percentage_threshold
 
 
-# Static config parsers 
+# Static config parsers
+
 
 def parse_analyzer_types(
     config: ConfigParser, tld_list: DomainList
@@ -114,7 +122,7 @@ def parse_analyzer_types(
             MLAnalyzer(
                 weight_percentage=float(mlanalyzer_config["weight_percentage"]),
                 identifer="ML",
-                apiurl=mlanalyzer_config["apiurl"]
+                apiurl=mlanalyzer_config["apiurl"],
             )
         )
 
@@ -145,14 +153,17 @@ def parse_tld_list(config: ConfigParser) -> DomainList:
 def parse_guard_types(args, config: ConfigParser) -> tuple[RecordReceiver, Firewall]:
 
     resources = GuardResources(
-        bpf_manager=None, firewall_csv_path=None, receiver_csv_path=None, cycle_csv_queries=False
+        bpf_manager=None,
+        firewall_csv_path=None,
+        receiver_csv_path=None,
+        cycle_csv_queries=False,
     )
 
     resources.firewall_csv_path = args.csv_firewall_path
 
     resources.receiver_csv_path = args.csv_records_path
 
-    resources.cycle_csv_queries = args.cycle_csv_queries 
+    resources.cycle_csv_queries = args.cycle_csv_queries
 
     return parse_record_receiver(config, resources), parse_firewall(config, resources)
 
@@ -201,7 +212,9 @@ def parse_record_receiver(
     elif receiver_type == "csv":
         if resources.receiver_csv_path is None:
             raise Exception("Path to CSV DNS Records not provided")
-        return CSVRecordReceiver(resources.receiver_csv_path, cycle_queries=resources.cycle_csv_queries)
+        return CSVRecordReceiver(
+            resources.receiver_csv_path, cycle_queries=resources.cycle_csv_queries
+        )
     else:
         raise Exception(f"Invalid Record Receiver type: {receiver_type}")
 
@@ -243,10 +256,6 @@ def parse_blacklist(config: ConfigParser) -> DomainList:
 def parse_percentage_threshold(config: ConfigParser) -> float:
     return float(config["analyzer"]["sus_percentage_threshold"])
 
-def parse_use_blacklist(config: ConfigParser) -> bool: 
-    return True if config["analyzer"]["use_blacklist"] == 'true' else False
 
-
-
-
-
+def parse_use_blacklist(config: ConfigParser) -> bool:
+    return True if config["analyzer"]["use_blacklist"] == "true" else False

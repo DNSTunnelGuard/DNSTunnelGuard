@@ -2,7 +2,6 @@ from bpfmanager import BPFManager
 
 
 class Firewall:
-
     def block_domain(self, domain: str):
         raise NotImplementedError("block_domain not implemented")
 
@@ -11,7 +10,6 @@ class Firewall:
 
 
 class CSVFirewall(Firewall):
-
     def __init__(self, path: str):
         self._path = path
         self._csv_file = open(self._path, "a")
@@ -24,7 +22,6 @@ class CSVFirewall(Firewall):
 
 
 class BPFFirewall(Firewall):
-
     def __init__(self, bpf_manager: BPFManager):
         self.bpf_manager = bpf_manager
 

@@ -84,9 +84,7 @@ class TrafficDNSAnalyzer(DNSAnalyzer):
 
         now = datetime.now()
 
-        peek_timestamp = lambda key: (
-            self.history[key][0] if self.history[key] else None
-        )
+        peek_timestamp = lambda key: self.history[key][0] if self.history[key] else None
 
         for domain in domains:
             timestamp = peek_timestamp((ip_address, domain))

@@ -79,12 +79,11 @@ class RecordReceiver:
 
 
 class CSVRecordReceiver(RecordReceiver):
-
     def __init__(
         self,
         path: str,
         max_queue_size=RecordReceiver.DEFAULT_MAX_QUEUE_SIZE,
-        cycle_queries=False
+        cycle_queries=False,
     ):
         self.csv_file = open(path, "r")
         self.csv_reader = csv.reader(self.csv_file)
@@ -104,12 +103,11 @@ class CSVRecordReceiver(RecordReceiver):
         try:
             row = next(self.csv_reader)
         except StopIteration:
-            if not self.cycle_queries: 
+            if not self.cycle_queries:
                 self._query_queue.put(None)
                 return False
             self.csv_file.seek(0)
             return True
-            
 
         qname, ip_addr = row
 
@@ -137,5 +135,5 @@ class BPFRecordReceiver(RecordReceiver):
         super().__init__(max_queue_size)
 
     def _push_record(self, wait_seconds: int) -> bool:
-        self.bpf_manager.poll_ringbuffer(wait_seconds)  
+        self.bpf_manager.poll_ringbuffer(wait_seconds)
         return True

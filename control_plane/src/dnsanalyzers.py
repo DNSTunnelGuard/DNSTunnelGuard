@@ -22,4 +22,3 @@ class DNSAnalyzer:
         Return reported actions and statistics based on analysis
         """
         raise NotImplementedError("report method not implemented")
-

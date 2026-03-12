@@ -1,82 +1,92 @@
 from argparse import ArgumentParser
-import guardconfig 
+import guardconfig
 import controlserver
 from guardcontroller import GuardController
 from recordreceiver import RecordReceiver
 import sys
-import queue 
+import queue
 
 import logging
 
 logger = logging.getLogger(__name__)
 
 
-
-def run_event_loop(receiver: RecordReceiver, guard_controller: GuardController, server_event_queue: queue.Queue): 
-    should_run = True 
+def run_event_loop(
+    receiver: RecordReceiver,
+    guard_controller: GuardController,
+    server_event_queue: queue.Queue,
+):
+    should_run = True
     with receiver:
-        while should_run: 
-            if not receiver.receive(1): 
-                break 
-            try: 
-                while True: 
-                    # handle server events 
+        while should_run:
+            if not receiver.receive(1):
+                break
+            try:
+                while True:
+                    # handle server events
                     event = server_event_queue.get_nowait()
-                    match event.event_type: 
-                        case controlserver.ServerEventType.RUNTIME_CONFIG_RELOAD: 
-                            runtime_config = event.data 
-                            guardconfig.update_guard_controller(guard_controller, runtime_config)
+                    match event.event_type:
+                        case controlserver.ServerEventType.RUNTIME_CONFIG_RELOAD:
+                            runtime_config = event.data
+                            guardconfig.update_guard_controller(
+                                guard_controller, runtime_config
+                            )
                             logger.info("Runtime config reloaded")
-                        case controlserver.ServerEventType.TERMINATE: 
+                        case controlserver.ServerEventType.TERMINATE:
                             should_run = False
                             logger.info("Terminating")
-                            break 
+                            break
 
             except queue.Empty:
                 continue
-
-
 
 
 def main():
     parser = ArgumentParser(description="DNS Tunnel Guard Options")
 
     parser.add_argument(
-        "-c", "--config_path", 
-        required=False, 
-        help="Path to config file", 
-        default="config.ini"
+        "-c",
+        "--config_path",
+        required=False,
+        help="Path to config file",
+        default="config/config.ini",
     )
 
     parser.add_argument(
-        "-rc", "--runtime_config_path", 
-        required=False, 
-        help="Path to runtime config file", 
-        default="runtime_config.ini"
+        "-rc",
+        "--runtime_config_path",
+        required=False,
+        help="Path to runtime config file",
+        default="config/runtime_config.ini",
     )
 
     parser.add_argument(
-        "-f", "--csv_firewall_path",
+        "-f",
+        "--csv_firewall_path",
         required=False,
         help="Path to emulated CSV file of blocked IP addresses and domain names",
     )
 
     parser.add_argument(
-        "-r", "--csv_records_path",
+        "-r",
+        "--csv_records_path",
         required=False,
         help="Path to emulated CSV file of DNS records",
     )
 
     parser.add_argument(
-        "-y", "--cycle_csv_queries",
+        "-y",
+        "--cycle_csv_queries",
         required=False,
         help="Cycle CSV record queries",
-        action="store_true"
+        action="store_true",
     )
 
     args = parser.parse_args()
 
-    logger.info(f"Using configuration {args.config_path} and runtime configuration {args.runtime_config_path}")
+    logger.info(
+        f"Using configuration {args.config_path} and runtime configuration {args.runtime_config_path}"
+    )
 
     try:
         config, runtime_config = guardconfig.get_configs(args)

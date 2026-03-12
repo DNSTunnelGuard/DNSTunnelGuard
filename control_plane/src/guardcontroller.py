@@ -48,7 +48,7 @@ class GuardController:
         self.tld_list = tld_list
         self.blacklist = blacklist
 
-        if blacklist is not None: 
+        if blacklist is not None:
             for domain in blacklist:
                 self.firewall.block_domain(domain)
 
@@ -96,7 +96,7 @@ class GuardController:
             for domain in blockable_domains:
                 logger.warning(f"Blocking suspicious domain {domain}")
                 self.firewall.block_domain(domain)
-                if self.blacklist is not None: 
+                if self.blacklist is not None:
                     self.blacklist.update(domain)
 
     def _get_blockable_domains(self, qname: str) -> list[str]:
