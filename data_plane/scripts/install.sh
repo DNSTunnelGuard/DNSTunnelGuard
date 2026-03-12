@@ -1,9 +1,7 @@
 
+
+
 apk add clang 
-
-apk add gcc
-
-apk add unbound
 
 rc-update add cgroups boot
 
