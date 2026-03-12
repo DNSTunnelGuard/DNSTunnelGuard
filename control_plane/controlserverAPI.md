@@ -27,11 +27,12 @@ replaces the runtime config file.
 
 Expects a file named 'file' with the config file data
 
-
 **/reset_runtime_config GET**
+
 Reset the runtime config to the saved runtime config 
 
 **/terminate GET**
+
 Terminate the tunnel guard program 
 
 
