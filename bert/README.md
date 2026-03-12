@@ -1,8 +1,15 @@
+
 # Running BERT
 
 ## Installing Dependencies
 
-Set up a virtual environment and install all of the necessary dependencies. A list of modules as well as their necessary versions can be found in requirements.txt. 
+```bash
+
+curl -LsSf https://astral.sh/uv/install.sh | sh # install uv package manager if neccessary 
+
+uv sync 
+
+```
 
 ---
 
@@ -31,9 +38,15 @@ Each model was tested on 1000 queries on three seperate generated CSV files here
 - **Regularized:** 87.5% (temp=3, thresh=0.9)
 - **Two Pass:** 98.7% (temp=1, thresh=0.92)
 ***Note*:** Temperature controls how the model is distributed. Higher temperature spreads the
-distribution more evenly, scores get "pulled in" toward 0.5, away from the extremes.
+distribution more evenly, scores get "pulled in" toward 0.5, away from the extremes. 4 is the reccomended temperature.
 
 ---
 
 ## Running main.py
-Run main.py using the command: ./venv/bin/python3 main.py <model_path> <temperature> <port> [debug] 
+```bash
+
+source .venv/bin/activate 
+
+python3 main.py <model_path> <temperature> <port> [debug]
+
+```

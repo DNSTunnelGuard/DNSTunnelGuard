@@ -30,30 +30,8 @@ It monitors both inbound and outbound DNS traffic, applies multiple detection me
 ---
 
 ## Get Started
-The program consists of the control plane, the data plane, and BERT analyzer REST API. The control plane and BERT API can be ran on any system, while the data plane 
-requires Linux cgroup eBPF support. 
 
-Currently, the only installation script available is for Alpine Linux using the Unbound resolver. DNS tunnel guard control plane can be ran in an emulated CSV mode
-for testing if the data plane is not active. 
+The project consists of three modules: the control plane, data plane, and BERT API. A corresponding README.md is in each directory 
+for instructions on how to run. 
 
-To run the control plane, 
-```bash
-cd control_plane
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 main.py -h # Display options to run the program. 
-```
-Configurations can be made in config.ini and runtime_config.ini.
-
-To run the BERT API, 
-```bash
-cd bert
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 main.py -h # Display options to run the program. 
-```
-[TODO]
-
-
+The data plane is only necessary if running outside of the emulated CSV mode. The BERT REST API server is only necessary if using the ML analyzer 
