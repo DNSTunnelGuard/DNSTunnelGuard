@@ -1,12 +1,13 @@
 from bpfmanager import BPFManager
+from abc import ABC, abstractmethod
 
 
-class Firewall:
-    def block_domain(self, domain: str):
-        raise NotImplementedError("block_domain not implemented")
+class Firewall(ABC):
+    @abstractmethod
+    def block_domain(self, domain: str): ...
 
-    def block_ip_address(self, ip_address: str):
-        raise NotImplementedError("block_ip_address not implemented")
+    @abstractmethod
+    def block_ip_address(self, ip_address: str): ...
 
 
 class CSVFirewall(Firewall):

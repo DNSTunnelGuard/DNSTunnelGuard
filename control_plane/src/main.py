@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 import guardconfig
-import controlserver
+from controlserver import ControlServer, ServerEventType
 from guardcontroller import GuardController
 from recordreceiver import RecordReceiver
 import sys
@@ -16,29 +16,28 @@ def run_event_loop(
     guard_controller: GuardController,
     server_event_queue: queue.Queue,
 ):
-    should_run = True
     with receiver:
-        while should_run:
-            if not receiver.receive(1):
-                break
+        while True:
             try:
                 while True:
                     # handle server events
                     event = server_event_queue.get_nowait()
                     match event.event_type:
-                        case controlserver.ServerEventType.RUNTIME_CONFIG_RELOAD:
+                        case ServerEventType.RUNTIME_CONFIG_RELOAD:
                             runtime_config = event.data
                             guardconfig.update_guard_controller(
                                 guard_controller, runtime_config
                             )
                             logger.info("Runtime config reloaded")
-                        case controlserver.ServerEventType.TERMINATE:
-                            should_run = False
+                        case ServerEventType.TERMINATE:
                             logger.info("Terminating")
-                            break
+                            return
 
             except queue.Empty:
-                continue
+                pass
+
+            if not receiver.receive(1):
+                break
 
 
 def main():
@@ -101,7 +100,9 @@ def main():
 
     logger.info(f"Tunnel Guard Up and Running\n\n")
 
-    server_event_queue = controlserver.run_server(config, runtime_config)
+    control_server = ControlServer(config, runtime_config)
+
+    server_event_queue = control_server.run()
 
     try:
         run_event_loop(config.receiver, guard_controller, server_event_queue)

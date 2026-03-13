@@ -66,11 +66,9 @@ class GuardController:
             f"Query Received. Domains: {qnames} from IP address {event.src_ip_addr} at {event.timestamp}"
         )
 
-        for wl in self.whitelists:
-            for domain in qnames:
-                if domain in wl:
-                    logger.info("Query found benign")
-                    return
+        if all(any(domain in wl for wl in self.whitelists) for domain in qnames):
+            logger.info("Queries found benign")
+            return
 
         blockable_domains = []
         for qname in qnames:

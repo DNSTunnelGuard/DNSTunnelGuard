@@ -66,6 +66,7 @@ class TrafficDNSAnalyzer(DNSAnalyzer):
                     domains.append(subdomain)
 
         self._reap_old_queries(domains, ip_address)
+        self._cleanup_unseen_queries()
 
         # Return the most sus domain if there were multiple questions
         max_sus_percentage = 0.0
@@ -95,6 +96,13 @@ class TrafficDNSAnalyzer(DNSAnalyzer):
             ):
                 self.history[(ip_address, domain)].popleft()
                 timestamp = peek_timestamp((ip_address, domain))
+
+    def _cleanup_unseen_queries(self): 
+        for key in list(self.history): 
+            if not self.history[key]: 
+                del self.history[key]
+
+
 
     def report(self) -> str:
 

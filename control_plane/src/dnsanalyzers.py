@@ -1,7 +1,8 @@
 from recordevent import RecordEvent
+from abc import ABC, abstractmethod
 
 
-class DNSAnalyzer:
+class DNSAnalyzer(ABC):
     """
     Abstract Base Class for all types of DNS query analyzers
     """
@@ -10,15 +11,17 @@ class DNSAnalyzer:
         self.weight_percentage = weight_percentage
         self.identifer = identifer
 
+    @abstractmethod
     def analyze(self, dns_event_query: RecordEvent) -> float:
         """
         Process and analyze one single DNS query
         Returns weight of suspicion of being tunneling
         """
-        raise NotImplementedError("process event method not implemented")
+        ...
 
+    @abstractmethod
     def report(self) -> str:
         """
         Return reported actions and statistics based on analysis
         """
-        raise NotImplementedError("report method not implemented")
+        ...
